@@ -1,0 +1,1860 @@
+{
+	"normal": [
+		{
+			"chord": "Cmaj",
+			"notes": ["C","E","G"]
+		},
+		{
+			"chord": "C#maj",
+			"notes": ["C#","F","G#"]
+		},
+		{
+			"chord": "Dmaj",
+			"notes": ["D","F#","A"]
+		},
+		{
+			"chord": "D#maj",
+			"notes": ["D#","G","A#"]
+		},
+		{
+			"chord": "Emaj",
+			"notes": ["E","G#","B"]
+		},
+		{
+			"chord": "Fmaj",
+			"notes": ["F","A","C"]
+		},
+		{
+			"chord": "F#maj",
+			"notes": ["F#","A#","C#"]
+		},
+		{
+			"chord": "Gmaj",
+			"notes": ["G","B","D"]
+		},
+		{
+			"chord": "G#maj",
+			"notes": ["G#","C","D#"]
+		},
+		{
+			"chord": "Amaj",
+			"notes": ["A","C#","E"]
+		},
+		{
+			"chord": "A#maj",
+			"notes": ["A#","D","F"]
+		},
+		{
+			"chord": "Bmaj",
+			"notes": ["B","D#","F#"]
+		},
+		{
+			"chord": "Cm",
+			"notes": ["C","D#","G"]
+		},
+		{
+			"chord": "C#m",
+			"notes": ["C#","E","G#"]
+		},
+		{
+			"chord": "Dm",
+			"notes": ["D","F","A"]
+		},
+		{
+			"chord": "D#m",
+			"notes": ["D#","F#","A#"]
+		},
+		{
+			"chord": "Em",
+			"notes": ["E","G","B"]
+		},
+		{
+			"chord": "Fm",
+			"notes": ["F","G#","C"]
+		},
+		{
+			"chord": "F#m",
+			"notes": ["F#","A","C#"]
+		},
+		{
+			"chord": "Gm",
+			"notes": ["G","A#","D"]
+		},
+		{
+			"chord": "G#m",
+			"notes": ["G#","B","D#"]
+		},
+		{
+			"chord": "Am",
+			"notes": ["A","C","E"]
+		},
+		{
+			"chord": "A#m",
+			"notes": ["A#","C#","F"]
+		},
+		{
+			"chord": "Bm",
+			"notes": ["B","D","F#"]
+		}
+	]
+},
+{
+	"sevenths": [
+		{
+			"chord": "C7",
+			"notes": ["C","E","G","A#"]
+		},
+		{
+			"chord": "C#7",
+			"notes": ["C#","F","G#","B"]
+		},
+		{
+			"chord": "D7",
+			"notes": ["D","F#","A","C"]
+		},
+		{
+			"chord": "D#7",
+			"notes": ["D#","G","A#","C#"]
+		},
+		{
+			"chord": "E7",
+			"notes": ["E","G#","B","D"]
+		},
+		{
+			"chord": "F7",
+			"notes": ["F","A","C","D#"]
+		},
+		{
+			"chord": "F#7",
+			"notes": ["F#","A#","C#","E"]
+		},
+		{
+			"chord": "G7",
+			"notes": ["G","B","D","F"]
+		},
+		{
+			"chord": "G#7",
+			"notes": ["G#","C","D#","F#"]
+		},
+		{
+			"chord": "A7",
+			"notes": ["A","C#","E","G"]
+		},
+		{
+			"chord": "A#7",
+			"notes": ["A#","D","F","G#"]
+		},
+		{
+			"chord": "B7",
+			"notes": ["B","D#","F#","A"]
+		},
+		{
+			"chord": "Cmin7",
+			"notes": ["C","D#","G","A#"]
+		},
+		{
+			"chord": "C#min7",
+			"notes": ["C#","E","G#","B"]
+		},
+		{
+			"chord": "Dmin7",
+			"notes": ["D","F","A","C"]
+		},
+		{
+			"chord": "D#min7",
+			"notes": ["D#","F#","A#","C#"]
+		},
+		{
+			"chord": "Emin7",
+			"notes": ["E","G","B","D"]
+		},
+		{
+			"chord": "Fmin7",
+			"notes": ["F","G#","C","D#"]
+		},
+		{
+			"chord": "F#min7",
+			"notes": ["F#","A","C#","E"]
+		},
+		{
+			"chord": "Gmin7",
+			"notes": ["G","A#","D","F"]
+		},
+		{
+			"chord": "G#min7",
+			"notes": ["G#","B","D#","F#"]
+		},
+		{
+			"chord": "Amin7",
+			"notes": ["A","C","E","G"]
+		},
+		{
+			"chord": "A#min7",
+			"notes": ["A#","C#","F","G#"]
+		},
+		{
+			"chord": "Bmin7",
+			"notes": ["B","D","F#","A"]
+		},
+		{
+			"chord": "Cmaj7",
+			"notes": ["C","E","G","B"]
+		},
+		{
+			"chord": "C#maj7",
+			"notes": ["C#","F","G#","C"]
+		},
+		{
+			"chord": "Dmaj7",
+			"notes": ["D","F#","A","C#"]
+		},
+		{
+			"chord": "D#maj7",
+			"notes": ["D#","G","A#","D"]
+		},
+		{
+			"chord": "Emaj7",
+			"notes": ["E","G#","B","D#"]
+		},
+		{
+			"chord": "Fmaj7",
+			"notes": ["F","A","C","E"]
+		},
+		{
+			"chord": "F#maj7",
+			"notes": ["F#","A#","C#","F"]
+		},
+		{
+			"chord": "Gmaj7",
+			"notes": ["G","B","D","F#"]
+		},
+		{
+			"chord": "G#maj7",
+			"notes": ["G#","C","D#","G"]
+		},
+		{
+			"chord": "Amaj7",
+			"notes": ["A","C#","E","G#"]
+		},
+		{
+			"chord": "A#maj7",
+			"notes": ["A#","D","F","A"]
+		},
+		{
+			"chord": "Bmaj7",
+			"notes": ["B","D#","F#","A#"]
+		},
+		{
+			"chord": "Cm/maj7",
+			"notes": ["C","D#","G","B"]
+		},
+		{
+			"chord": "C#m/maj7",
+			"notes": ["C#","E","G#","C"]
+		},
+		{
+			"chord": "Dm/maj7",
+			"notes": ["D","F","A","C#"]
+		},
+		{
+			"chord": "D#m/maj7",
+			"notes": ["D#","F#","A#","D"]
+		},
+		{
+			"chord": "Em/maj7",
+			"notes": ["E","G","B","D#"]
+		},
+		{
+			"chord": "Fm/maj7",
+			"notes": ["F","G#","C","E"]
+		},
+		{
+			"chord": "F#m/maj7",
+			"notes": ["F#","A","C#","F"]
+		},
+		{
+			"chord": "Gm/maj7",
+			"notes": ["G","A#","D","F#"]
+		},
+		{
+			"chord": "G#m/maj7",
+			"notes": ["G#","B","D#","G"]
+		},
+		{
+			"chord": "Am/maj7",
+			"notes": ["A","C","E","G#"]
+		},
+		{
+			"chord": "A#m/maj7",
+			"notes": ["A#","C#","F","A"]
+		},
+		{
+			"chord": "Bm/maj7",
+			"notes": ["B","D","F#","A#"]
+		}
+	]
+},
+{
+	"sus4": [
+		{
+			"chord": "Csus4",
+			"notes": ["C","F","G"]
+		},
+		{
+			"chord": "C#sus4",
+			"notes": ["C#","F#","G#"]
+		},
+		{
+			"chord": "Dsus4",
+			"notes": ["D","G","A"]
+		},
+		{
+			"chord": "D#sus4",
+			"notes": ["D#","G#","A#"]
+		},
+		{
+			"chord": "Esus4",
+			"notes": ["E","A","B"]
+		},
+		{
+			"chord": "Fsus4",
+			"notes": ["F","A#","C"]
+		},
+		{
+			"chord": "F#sus4",
+			"notes": ["F#","B","C#"]
+		},
+		{
+			"chord": "Gsus4",
+			"notes": ["G","C","D"]
+		},
+		{
+			"chord": "G#sus4",
+			"notes": ["G#","C#","D#"]
+		},
+		{
+			"chord": "Asus4",
+			"notes": ["A","D","E"]
+		},
+		{
+			"chord": "A#sus4",
+			"notes": ["A#","D#","F"]
+		},
+		{
+			"chord": "Bsus4",
+			"notes": ["B","E","F#"]
+		},
+		{
+			"chord": "C7sus4",
+			"notes": ["C","F","G","A#"]
+		},
+		{
+			"chord": "C#7sus4",
+			"notes": ["C#","F#","G#","B"]
+		},
+		{
+			"chord": "D7sus4",
+			"notes": ["D","G","A","C"]
+		},
+		{
+			"chord": "D#7sus4",
+			"notes": ["D#","G#","A#","C#"]
+		},
+		{
+			"chord": "E7sus4",
+			"notes": ["E","A","B","D"]
+		},
+		{
+			"chord": "F7sus4",
+			"notes": ["F","A#","C","D#"]
+		},
+		{
+			"chord": "F#7sus4",
+			"notes": ["F#","B","C#","E"]
+		},
+		{
+			"chord": "G7sus4",
+			"notes": ["G","C","D","F"]
+		},
+		{
+			"chord": "G#7sus4",
+			"notes": ["G#","C#","D#","F#"]
+		},
+		{
+			"chord": "A7sus4",
+			"notes": ["A","D","E","G"]
+		},
+		{
+			"chord": "A#7sus4",
+			"notes": ["A#","D#","F","G#"]
+		},
+		{
+			"chord": "B7sus4",
+			"notes": ["B","E","F#","A"]
+		}
+	]
+},
+{
+	"sixths": [
+		{
+			"chord": "C6",
+			"notes": ["C","E","G","A"]
+		},
+		{
+			"chord": "C#6",
+			"notes": ["C#","F","G#","A#"]
+		},
+		{
+			"chord": "D6",
+			"notes": ["D","F#","A","B"]
+		},
+		{
+			"chord": "D#6",
+			"notes": ["D#","G","A#","C"]
+		},
+		{
+			"chord": "E6",
+			"notes": ["E","G#","B","C#"]
+		},
+		{
+			"chord": "F6",
+			"notes": ["F","A","C","D"]
+		},
+		{
+			"chord": "F#6",
+			"notes": ["F#","A#","C#","D#"]
+		},
+		{
+			"chord": "G6",
+			"notes": ["G","B","D","E"]
+		},
+		{
+			"chord": "G#6",
+			"notes": ["G#","C","D#","F"]
+		},
+		{
+			"chord": "A6",
+			"notes": ["A","C#","E","F#"]
+		},
+		{
+			"chord": "A#6",
+			"notes": ["A#","D","F","G"]
+		},
+		{
+			"chord": "B6",
+			"notes": ["B","D#","F#","G#"]
+		},
+		{
+			"chord": "Cmin6",
+			"notes": ["C","D#","G","A"]
+		},
+		{
+			"chord": "C#min6",
+			"notes": ["C#","E","G#","A#"]
+		},
+		{
+			"chord": "Dmin6",
+			"notes": ["D","F","A","B"]
+		},
+		{
+			"chord": "D#min6",
+			"notes": ["D#","F#","A#","C"]
+		},
+		{
+			"chord": "Emin6",
+			"notes": ["E","G","B","C#"]
+		},
+		{
+			"chord": "Fmin6",
+			"notes": ["F","G#","C","D"]
+		},
+		{
+			"chord": "F#min6",
+			"notes": ["F#","A","C#","D#"]
+		},
+		{
+			"chord": "Gmin6",
+			"notes": ["G","A#","D","E"]
+		},
+		{
+			"chord": "G#min6",
+			"notes": ["G#","B","D#","F"]
+		},
+		{
+			"chord": "Amin6",
+			"notes": ["A","C","E","F#"]
+		},
+		{
+			"chord": "A#min6",
+			"notes": ["A#","C#","F","G"]
+		},
+		{
+			"chord": "Bmin6",
+			"notes": ["B","D","F#","G#"]
+		}
+	]
+},
+{
+	"dim": [
+		{
+			"chord": "Cdim",
+			"notes": ["C","D#","F#"]
+		},
+		{
+			"chord": "C#dim",
+			"notes": ["C#","E","G"]
+		},
+		{
+			"chord": "Ddim",
+			"notes": ["D","F","G#"]
+		},
+		{
+			"chord": "D#dim",
+			"notes": ["D#","F#","A"]
+		},
+		{
+			"chord": "Edim",
+			"notes": ["E","G","A#"]
+		},
+		{
+			"chord": "Fdim",
+			"notes": ["F","G#","B"]
+		},
+		{
+			"chord": "F#dim",
+			"notes": ["F#","A","C"]
+		},
+		{
+			"chord": "Gdim",
+			"notes": ["G","A#","C#"]
+		},
+		{
+			"chord": "G#dim",
+			"notes": ["G#","B","D"]
+		},
+		{
+			"chord": "Adim",
+			"notes": ["A","C","D#"]
+		},
+		{
+			"chord": "A#dim",
+			"notes": ["A#","C#","E"]
+		},
+		{
+			"chord": "Bdim",
+			"notes": ["B","D","F"]
+		}
+	]
+},
+{
+	"aug": [
+		{
+			"chord": "Caug",
+			"notes": ["C","E","G#"]
+		},
+		{
+			"chord": "C#aug",
+			"notes": ["C#","F","A"]
+		},
+		{
+			"chord": "Daug",
+			"notes": ["D","F#","A#"]
+		},
+		{
+			"chord": "D#aug",
+			"notes": ["D#","G","B"]
+		},
+		{
+			"chord": "Eaug",
+			"notes": ["E","G#","C"]
+		},
+		{
+			"chord": "Faug",
+			"notes": ["F","A","C#"]
+		},
+		{
+			"chord": "F#aug",
+			"notes": ["F#","A#","D"]
+		},
+		{
+			"chord": "Gaug",
+			"notes": ["G","B","D#"]
+		},
+		{
+			"chord": "G#aug",
+			"notes": ["G#","C","E"]
+		},
+		{
+			"chord": "Aaug",
+			"notes": ["A","C#","F"]
+		},
+		{
+			"chord": "A#aug",
+			"notes": ["A#","D","F#"]
+		},
+		{
+			"chord": "Baug",
+			"notes": ["B","D#","G"]
+		}
+	]
+},
+{
+	"7-5": [
+		{
+			"chord": "C7-5",
+			"notes": ["C","E","F#","A#"]
+		},
+		{
+			"chord": "C#7-5",
+			"notes": ["C#","F","G","B"]
+		},
+		{
+			"chord": "D7-5",
+			"notes": ["D","F#","G#","C"]
+		},
+		{
+			"chord": "D#7-5",
+			"notes": ["D#","G","A","C#"]
+		},
+		{
+			"chord": "E7-5",
+			"notes": ["E","G#","A#","D"]
+		},
+		{
+			"chord": "F7-5",
+			"notes": ["F","A","B","D#"]
+		},
+		{
+			"chord": "F#7-5",
+			"notes": ["F#","A#","C","E"]
+		},
+		{
+			"chord": "G7-5",
+			"notes": ["G","B","C#","F"]
+		},
+		{
+			"chord": "G#7-5",
+			"notes": ["G#","C","D","F#"]
+		},
+		{
+			"chord": "A7-5",
+			"notes": ["A","C#","D#","G"]
+		},
+		{
+			"chord": "A#7-5",
+			"notes": ["A#","D","E","G#"]
+		},
+		{
+			"chord": "B7-5",
+			"notes": ["B","D#","F","A"]
+		},
+		{
+			"chord": "Cm7-5",
+			"notes": ["C","D#","F#","A#"]
+		},
+		{
+			"chord": "C#m7-5",
+			"notes": ["C#","E","G","B"]
+		},
+		{
+			"chord": "Dm7-5",
+			"notes": ["D","F","G#","C"]
+		},
+		{
+			"chord": "D#m7-5",
+			"notes": ["D#","F#","A","C#"]
+		},
+		{
+			"chord": "Em7-5",
+			"notes": ["E","G","A#","D"]
+		},
+		{
+			"chord": "Fm7-5",
+			"notes": ["F","G#","B","D#"]
+		},
+		{
+			"chord": "F#m7-5",
+			"notes": ["F#","A","C","E"]
+		},
+		{
+			"chord": "Gm7-5",
+			"notes": ["G","A#","C#","F"]
+		},
+		{
+			"chord": "G#m7-5",
+			"notes": ["G#","B","D","F#"]
+		},
+		{
+			"chord": "Am7-5",
+			"notes": ["A","C","D#","G"]
+		},
+		{
+			"chord": "A#m7-5",
+			"notes": ["A#","C#","E","G#"]
+		},
+		{
+			"chord": "Bm7-5",
+			"notes": ["B","D","F","A"]
+		},
+		{
+			"chord": "Cmaj7-5",
+			"notes": ["C","E","F#","B"]
+		},
+		{
+			"chord": "C#maj7-5",
+			"notes": ["C#","F","G","C"]
+		},
+		{
+			"chord": "Dmaj7-5",
+			"notes": ["D","F#","G#","C#"]
+		},
+		{
+			"chord": "D#maj7-5",
+			"notes": ["D#","G","A","D"]
+		},
+		{
+			"chord": "Emaj7-5",
+			"notes": ["E","G#","A#","D#"]
+		},
+		{
+			"chord": "Fmaj7-5",
+			"notes": ["F","A","B","E"]
+		},
+		{
+			"chord": "F#maj7-5",
+			"notes": ["F#","A#","C","F"]
+		},
+		{
+			"chord": "Gmaj7-5",
+			"notes": ["G","B","C#","F#"]
+		},
+		{
+			"chord": "G#maj7-5",
+			"notes": ["G#","C","D","G"]
+		},
+		{
+			"chord": "Amaj7-5",
+			"notes": ["A","C#","D#","G#"]
+		},
+		{
+			"chord": "A#maj7-5",
+			"notes": ["A#","D","E","A"]
+		},
+		{
+			"chord": "Bmaj7-5",
+			"notes": ["B","D#","F","A#"]
+		}
+	]
+},
+{
+	"7+5": [
+		{
+			"chord": "C7+5",
+			"notes": ["C","E","G#","A#"]
+		},
+		{
+			"chord": "C#7+5",
+			"notes": ["C#","F","A","B"]
+		},
+		{
+			"chord": "D7+5",
+			"notes": ["D","F#","A#","C"]
+		},
+		{
+			"chord": "D#7+5",
+			"notes": ["D#","G","B","C#"]
+		},
+		{
+			"chord": "E7+5",
+			"notes": ["E","G#","C","D"]
+		},
+		{
+			"chord": "F7+5",
+			"notes": ["F","A","C#","D#"]
+		},
+		{
+			"chord": "F#7+5",
+			"notes": ["F#","A#","D","E"]
+		},
+		{
+			"chord": "G7+5",
+			"notes": ["G","B","D#","F"]
+		},
+		{
+			"chord": "G#7+5",
+			"notes": ["G#","C","E","F#"]
+		},
+		{
+			"chord": "A7+5",
+			"notes": ["A","C#","F","G"]
+		},
+		{
+			"chord": "A#7+5",
+			"notes": ["A#","D","F#","G#"]
+		},
+		{
+			"chord": "B7+5",
+			"notes": ["B","D#","G","A"]
+		},
+		{
+			"chord": "Cmaj7+5",
+			"notes": ["C","E","G#","B"]
+		},
+		{
+			"chord": "C#maj7+5",
+			"notes": ["C#","F","A","C"]
+		},
+		{
+			"chord": "Dmaj7+5",
+			"notes": ["D","F#","A#","C#"]
+		},
+		{
+			"chord": "D#maj7+5",
+			"notes": ["D#","G","B","D"]
+		},
+		{
+			"chord": "Emaj7+5",
+			"notes": ["E","G#","C","D#"]
+		},
+		{
+			"chord": "Fmaj7+5",
+			"notes": ["F","A","C#","E"]
+		},
+		{
+			"chord": "F#maj7+5",
+			"notes": ["F#","A#","D","F"]
+		},
+		{
+			"chord": "Gmaj7+5",
+			"notes": ["G","B","D#","F#"]
+		},
+		{
+			"chord": "G#maj7+5",
+			"notes": ["G#","C","E","G"]
+		},
+		{
+			"chord": "Amaj7+5",
+			"notes": ["A","C#","F","G#"]
+		},
+		{
+			"chord": "A#maj7+5",
+			"notes": ["A#","D","F#","A"]
+		},
+		{
+			"chord": "Bmaj7+5",
+			"notes": ["B","D#","G","A#"]
+		}
+	]
+},
+{
+	"ninths": [
+		{
+			"chord": "C9",
+			"notes": ["C","E","G","A#","D"]
+		},
+		{
+			"chord": "C#9",
+			"notes": ["C#","F","G#","B","D#"]
+		},
+		{
+			"chord": "D9",
+			"notes": ["D","F#","A","C","E"]
+		},
+		{
+			"chord": "D#9",
+			"notes": ["D#","G","A#","C#","F"]
+		},
+		{
+			"chord": "E9",
+			"notes": ["E","G#","B","D","F#"]
+		},
+		{
+			"chord": "F9",
+			"notes": ["F","A","C","D#","G"]
+		},
+		{
+			"chord": "F#9",
+			"notes": ["F#","A#","C#","E","G#"]
+		},
+		{
+			"chord": "G9",
+			"notes": ["G","B","D","F","A"]
+		},
+		{
+			"chord": "G#9",
+			"notes": ["G#","C","D#","F#","A#"]
+		},
+		{
+			"chord": "A9",
+			"notes": ["A","C#","E","G","B"]
+		},
+		{
+			"chord": "A#9",
+			"notes": ["A#","D","F","G#","C"]
+		},
+		{
+			"chord": "B9",
+			"notes": ["B","D#","F#","A","C#"]
+		},
+		{
+			"chord": "Cm9",
+			"notes": ["C","D#","G","A#","D"]
+		},
+		{
+			"chord": "C#m9",
+			"notes": ["C#","E","G#","B","D#"]
+		},
+		{
+			"chord": "Dm9",
+			"notes": ["D","F","A","C","E"]
+		},
+		{
+			"chord": "D#m9",
+			"notes": ["D#","F#","A#","C#","F"]
+		},
+		{
+			"chord": "Em9",
+			"notes": ["E","G","B","D","F#"]
+		},
+		{
+			"chord": "Fm9",
+			"notes": ["F","G#","C","D#","G"]
+		},
+		{
+			"chord": "F#m9",
+			"notes": ["F#","A","C#","E","G#"]
+		},
+		{
+			"chord": "Gm9",
+			"notes": ["G","A#","D","F","A"]
+		},
+		{
+			"chord": "G#m9",
+			"notes": ["G#","B","D#","F#","A#"]
+		},
+		{
+			"chord": "Am9",
+			"notes": ["A","C","E","G","B"]
+		},
+		{
+			"chord": "A#m9",
+			"notes": ["A#","C#","F","G#","C"]
+		},
+		{
+			"chord": "Bm9",
+			"notes": ["B","D","F#","A","C#"]
+		},
+		{
+			"chord": "Cmaj9",
+			"notes": ["C","E","G","B","D"]
+		},
+		{
+			"chord": "C#maj9",
+			"notes": ["C#","F","G#","C","D#"]
+		},
+		{
+			"chord": "Dmaj9",
+			"notes": ["D","F#","A","C#","E"]
+		},
+		{
+			"chord": "D#maj9",
+			"notes": ["D#","G","A#","D","F"]
+		},
+		{
+			"chord": "Emaj9",
+			"notes": ["E","G#","B","D#","F#"]
+		},
+		{
+			"chord": "Fmaj9",
+			"notes": ["F","A","C","E","G"]
+		},
+		{
+			"chord": "F#maj9",
+			"notes": ["F#","A#","C#","F","G#"]
+		},
+		{
+			"chord": "Gmaj9",
+			"notes": ["G","B","D","F#","A"]
+		},
+		{
+			"chord": "G#maj9",
+			"notes": ["G#","C","D#","G","A#"]
+		},
+		{
+			"chord": "Amaj9",
+			"notes": ["A","C#","E","G#","B"]
+		},
+		{
+			"chord": "A#maj9",
+			"notes": ["A#","D","F","A","C"]
+		},
+		{
+			"chord": "Bmaj9",
+			"notes": ["B","D#","F#","A#","C#"]
+		}
+	]
+},
+{
+	"7+9": [
+		{
+			"chord": "C7+9",
+			"notes": ["C","E","G","A#","D#"]
+		},
+		{
+			"chord": "C#7+9",
+			"notes": ["C#","F","G#","B","E"]
+		},
+		{
+			"chord": "D7+9",
+			"notes": ["D","F#","A","C","F"]
+		},
+		{
+			"chord": "D#7+9",
+			"notes": ["D#","G","A#","C#","F#"]
+		},
+		{
+			"chord": "E7+9",
+			"notes": ["E","G#","B","D","G"]
+		},
+		{
+			"chord": "F7+9",
+			"notes": ["F","A","C","D#","G#"]
+		},
+		{
+			"chord": "F#7+9",
+			"notes": ["F#","A#","C#","E","A"]
+		},
+		{
+			"chord": "G7+9",
+			"notes": ["G","B","D","F","A#"]
+		},
+		{
+			"chord": "G#7+9",
+			"notes": ["G#","C","D#","F#","B"]
+		},
+		{
+			"chord": "A7+9",
+			"notes": ["A","C#","E","G","C"]
+		},
+		{
+			"chord": "A#7+9",
+			"notes": ["A#","D","F","G#","C#"]
+		},
+		{
+			"chord": "B7+9",
+			"notes": ["B","D#","F#","A","D"]
+		}
+	]
+},
+{
+	"7-9": [
+		{
+			"chord": "C7-9",
+			"notes": ["C","E","G","A#","C#"]
+		},
+		{
+			"chord": "C#7-9",
+			"notes": ["C#","F","G#","B","D"]
+		},
+		{
+			"chord": "D7-9",
+			"notes": ["D","F#","A","C","D#"]
+		},
+		{
+			"chord": "D#7-9",
+			"notes": ["D#","G","A#","C#","E"]
+		},
+		{
+			"chord": "E7-9",
+			"notes": ["E","G#","B","D","F"]
+		},
+		{
+			"chord": "F7-9",
+			"notes": ["F","A","C","D#","F#"]
+		},
+		{
+			"chord": "F#7-9",
+			"notes": ["F#","A#","C#","E","G"]
+		},
+		{
+			"chord": "G7-9",
+			"notes": ["G","B","D","F","G#"]
+		},
+		{
+			"chord": "G#7-9",
+			"notes": ["G#","C","D#","F#","A"]
+		},
+		{
+			"chord": "A7-9",
+			"notes": ["A","C#","E","G","A#"]
+		},
+		{
+			"chord": "A#7-9",
+			"notes": ["A#","D","F","G#","B"]
+		},
+		{
+			"chord": "B7-9",
+			"notes": ["B","D#","F#","A","C"]
+		}
+	]
+},
+{
+	"7+9-5": [
+		{
+			"chord": "C7+9-5",
+			"notes": ["C","E","F#","A#","D#"]
+		},
+		{
+			"chord": "C#7+9-5",
+			"notes": ["C#","F","G","B","E"]
+		},
+		{
+			"chord": "D7+9-5",
+			"notes": ["D","F#","G#","C","F"]
+		},
+		{
+			"chord": "D#7+9-5",
+			"notes": ["D#","G","A","C#","F#"]
+		},
+		{
+			"chord": "E7+9-5",
+			"notes": ["E","G#","A#","D","G"]
+		},
+		{
+			"chord": "F7+9-5",
+			"notes": ["F","A","B","D#","G#"]
+		},
+		{
+			"chord": "F#7+9-5",
+			"notes": ["F#","A#","C","E","A"]
+		},
+		{
+			"chord": "G7+9-5",
+			"notes": ["G","B","C#","F","A#"]
+		},
+		{
+			"chord": "G#7+9-5",
+			"notes": ["G#","C","D","F#","B"]
+		},
+		{
+			"chord": "A7+9-5",
+			"notes": ["A","C#","D#","G","C"]
+		},
+		{
+			"chord": "A#7+9-5",
+			"notes": ["A#","D","E","G#","C#"]
+		},
+		{
+			"chord": "B7+9-5",
+			"notes": ["B","D#","F","A","D"]
+		}
+	]
+},
+{
+	"6/9": [
+		{
+			"chord": "C6/9",
+			"notes": ["C","E","G","A","D"]
+		},
+		{
+			"chord": "C#6/9",
+			"notes": ["C#","F","G#","A#","D#"]
+		},
+		{
+			"chord": "D6/9",
+			"notes": ["D","F#","A","B","E"]
+		},
+		{
+			"chord": "D#6/9",
+			"notes": ["D#","G","A#","C","F"]
+		},
+		{
+			"chord": "E6/9",
+			"notes": ["E","G#","B","C#","F#"]
+		},
+		{
+			"chord": "F6/9",
+			"notes": ["F","A","C","D","G"]
+		},
+		{
+			"chord": "F#6/9",
+			"notes": ["F#","A#","C#","D#","G#"]
+		},
+		{
+			"chord": "G6/9",
+			"notes": ["G","B","D","E","A"]
+		},
+		{
+			"chord": "G#6/9",
+			"notes": ["G#","C","D#","F","A#"]
+		},
+		{
+			"chord": "A6/9",
+			"notes": ["A","C#","E","F#","B"]
+		},
+		{
+			"chord": "A#6/9",
+			"notes": ["A#","D","F","G","C"]
+		},
+		{
+			"chord": "B6/9",
+			"notes": ["B","D#","F#","G#","C#"]
+		}
+	]
+},
+{
+	"9+5": [
+		{
+			"chord": "C9+5",
+			"notes": ["C","E","G#","A#","D"]
+		},
+		{
+			"chord": "C#9+5",
+			"notes": ["C#","F","A","B","D#"]
+		},
+		{
+			"chord": "D9+5",
+			"notes": ["D","F#","A#","C","E"]
+		},
+		{
+			"chord": "D#9+5",
+			"notes": ["D#","G","B","C#","F"]
+		},
+		{
+			"chord": "E9+5",
+			"notes": ["E","G#","C","D","F#"]
+		},
+		{
+			"chord": "F9+5",
+			"notes": ["F","A","C#","D#","G"]
+		},
+		{
+			"chord": "F#9+5",
+			"notes": ["F#","A#","D","E","G#"]
+		},
+		{
+			"chord": "G9+5",
+			"notes": ["G","B","D#","F","A"]
+		},
+		{
+			"chord": "G#9+5",
+			"notes": ["G#","C","E","F#","A#"]
+		},
+		{
+			"chord": "A9+5",
+			"notes": ["A","C#","F","G","B"]
+		},
+		{
+			"chord": "A#9+5",
+			"notes": ["A#","D","F#","G#","C"]
+		},
+		{
+			"chord": "B9+5",
+			"notes": ["B","D#","G","A","C#"]
+		}
+	]
+},
+{
+	"9-5": [
+		{
+			"chord": "C9-5",
+			"notes": ["C","E","F#","A#","D"]
+		},
+		{
+			"chord": "C#9-5",
+			"notes": ["C#","F","G","B","D#"]
+		},
+		{
+			"chord": "D9-5",
+			"notes": ["D","F#","G#","C","E"]
+		},
+		{
+			"chord": "D#9-5",
+			"notes": ["D#","G","A","C#","F"]
+		},
+		{
+			"chord": "E9-5",
+			"notes": ["E","G#","A#","D","F#"]
+		},
+		{
+			"chord": "F9-5",
+			"notes": ["F","A","B","D#","G"]
+		},
+		{
+			"chord": "F#9-5",
+			"notes": ["F#","A#","C","E","G#"]
+		},
+		{
+			"chord": "G9-5",
+			"notes": ["G","B","C#","F","A"]
+		},
+		{
+			"chord": "G#9-5",
+			"notes": ["G#","C","D","F#","A#"]
+		},
+		{
+			"chord": "A9-5",
+			"notes": ["A","C#","D#","G","B"]
+		},
+		{
+			"chord": "A#9-5",
+			"notes": ["A#","D","E","G#","C"]
+		},
+		{
+			"chord": "B9-5",
+			"notes": ["B","D#","F","A","C#"]
+		},
+		{
+			"chord": "Cm9-5",
+			"notes": ["C","D#","F#","A#","D"]
+		},
+		{
+			"chord": "C#m9-5",
+			"notes": ["C#","E","G","B","D#"]
+		},
+		{
+			"chord": "Dm9-5",
+			"notes": ["D","F","G#","C","E"]
+		},
+		{
+			"chord": "D#m9-5",
+			"notes": ["D#","F#","A","C#","F"]
+		},
+		{
+			"chord": "Em9-5",
+			"notes": ["E","G","A#","D","F#"]
+		},
+		{
+			"chord": "Fm9-5",
+			"notes": ["F","G#","B","D#","G"]
+		},
+		{
+			"chord": "F#m9-5",
+			"notes": ["F#","A","C","E","G#"]
+		},
+		{
+			"chord": "Gm9-5",
+			"notes": ["G","A#","C#","F","A"]
+		},
+		{
+			"chord": "G#m9-5",
+			"notes": ["G#","B","D","F#","A#"]
+		},
+		{
+			"chord": "Am9-5",
+			"notes": ["A","C","D#","G","B"]
+		},
+		{
+			"chord": "A#m9-5",
+			"notes": ["A#","C#","E","G#","C"]
+		},
+		{
+			"chord": "Bm9-5",
+			"notes": ["B","D","F","A","C#"]
+		}
+	]
+},
+{
+	"elevenths": [
+		{
+			"chord": "C11",
+			"notes": ["C","E","G","A#","D","F"]
+		},
+		{
+			"chord": "C#11",
+			"notes": ["C#","F","G#","B","D#","F#"]
+		},
+		{
+			"chord": "D11",
+			"notes": ["D","F#","A","C","E","G"]
+		},
+		{
+			"chord": "D#11",
+			"notes": ["D#","G","A#","C#","F","G#"]
+		},
+		{
+			"chord": "E11",
+			"notes": ["E","G#","B","D","F#","A"]
+		},
+		{
+			"chord": "F11",
+			"notes": ["F","A","C","D#","G","A#"]
+		},
+		{
+			"chord": "F#11",
+			"notes": ["F#","A#","C#","E","G#","B"]
+		},
+		{
+			"chord": "G11",
+			"notes": ["G","B","D","F","A","C"]
+		},
+		{
+			"chord": "G#11",
+			"notes": ["G#","C","D#","F#","A#","C#"]
+		},
+		{
+			"chord": "A11",
+			"notes": ["A","C#","E","G","B","D"]
+		},
+		{
+			"chord": "A#11",
+			"notes": ["A#","D","F","G#","C","D#"]
+		},
+		{
+			"chord": "B11",
+			"notes": ["B","D#","F#","A","C#","E"]
+		},
+		{
+			"chord": "Cm11",
+			"notes": ["C","D#","G","A#","D","F"]
+		},
+		{
+			"chord": "C#m11",
+			"notes": ["C#","E","G#","B","D#","F#"]
+		},
+		{
+			"chord": "Dm11",
+			"notes": ["D","F","A","C","E","G"]
+		},
+		{
+			"chord": "D#m11",
+			"notes": ["D#","F#","A#","C#","F","G#"]
+		},
+		{
+			"chord": "Em11",
+			"notes": ["E","G","B","D","F#","A"]
+		},
+		{
+			"chord": "Fm11",
+			"notes": ["F","G#","C","D#","G","A#"]
+		},
+		{
+			"chord": "F#m11",
+			"notes": ["F#","A","C#","E","G#","B"]
+		},
+		{
+			"chord": "Gm11",
+			"notes": ["G","A#","D","F","A","C"]
+		},
+		{
+			"chord": "G#m11",
+			"notes": ["G#","B","D#","F#","A#","C#"]
+		},
+		{
+			"chord": "Am11",
+			"notes": ["A","C","E","G","B","D"]
+		},
+		{
+			"chord": "A#m11",
+			"notes": ["A#","C#","F","G#","C","D#"]
+		},
+		{
+			"chord": "Bm11",
+			"notes": ["B","D","F#","A","C#","E"]
+		}
+	]
+},
+{
+	"11-9": [
+		{
+			"chord": "C11-9",
+			"notes": ["C","E","G","A#","C#","F"]
+		},
+		{
+			"chord": "C#11-9",
+			"notes": ["C#","F","G#","B","D","F#"]
+		},
+		{
+			"chord": "D11-9",
+			"notes": ["D","F#","A","C","D#","G"]
+		},
+		{
+			"chord": "D#11-9",
+			"notes": ["D#","G","A#","C#","E","G#"]
+		},
+		{
+			"chord": "E11-9",
+			"notes": ["E","G#","B","D","F","A"]
+		},
+		{
+			"chord": "F11-9",
+			"notes": ["F","A","C","D#","F#","A#"]
+		},
+		{
+			"chord": "F#11-9",
+			"notes": ["F#","A#","C#","E","G","B"]
+		},
+		{
+			"chord": "G11-9",
+			"notes": ["G","B","D","F","G#","C"]
+		},
+		{
+			"chord": "G#11-9",
+			"notes": ["G#","C","D#","F#","A","C#"]
+		},
+		{
+			"chord": "A11-9",
+			"notes": ["A","C#","E","G","A#","D"]
+		},
+		{
+			"chord": "A#11-9",
+			"notes": ["A#","D","F","G#","B","D#"]
+		},
+		{
+			"chord": "B11-9",
+			"notes": ["B","D#","F#","A","C","E"]
+		}
+	]
+},
+{
+	"thirteenths": [
+		{
+			"chord": "C13",
+			"notes": ["C","E","G","A#","D","F","A"]
+		},
+		{
+			"chord": "C#13",
+			"notes": ["C#","F","G#","B","D#","F#","A#"]
+		},
+		{
+			"chord": "D13",
+			"notes": ["D","F#","A","C","E","G","B"]
+		},
+		{
+			"chord": "D#13",
+			"notes": ["D#","G","A#","C#","F","G#","C"]
+		},
+		{
+			"chord": "E13",
+			"notes": ["E","G#","B","D","F#","A","C#"]
+		},
+		{
+			"chord": "F13",
+			"notes": ["F","A","C","D#","G","A#","D"]
+		},
+		{
+			"chord": "F#13",
+			"notes": ["F#","A#","C#","E","G#","B","D#"]
+		},
+		{
+			"chord": "G13",
+			"notes": ["G","B","D","F","A","C","E"]
+		},
+		{
+			"chord": "G#13",
+			"notes": ["G#","C","D#","F#","A#","C#","F"]
+		},
+		{
+			"chord": "A13",
+			"notes": ["A","C#","E","G","B","D","F#"]
+		},
+		{
+			"chord": "A#13",
+			"notes": ["A#","D","F","G#","C","D#","G"]
+		},
+		{
+			"chord": "B13",
+			"notes": ["B","D#","F#","A","C#","E","G#"]
+		},
+		{
+			"chord": "Cm13",
+			"notes": ["C","D#","G","A#","D","F","A"]
+		},
+		{
+			"chord": "C#m13",
+			"notes": ["C#","E","G#","B","D#","F#","A#"]
+		},
+		{
+			"chord": "Dm13",
+			"notes": ["D","F","A","C","E","G","B"]
+		},
+		{
+			"chord": "D#m13",
+			"notes": ["D#","F#","A#","C#","F","G#","C"]
+		},
+		{
+			"chord": "Em13",
+			"notes": ["E","G","B","D","F#","A","C#"]
+		},
+		{
+			"chord": "Fm13",
+			"notes": ["F","G#","C","D#","G","A#","D"]
+		},
+		{
+			"chord": "F#m13",
+			"notes": ["F#","A","C#","E","G#","B","D#"]
+		},
+		{
+			"chord": "Gm13",
+			"notes": ["G","A#","D","F","A","C","E"]
+		},
+		{
+			"chord": "G#m13",
+			"notes": ["G#","B","D#","F#","A#","C#","F"]
+		},
+		{
+			"chord": "Am13",
+			"notes": ["A","C","E","G","B","D","F#"]
+		},
+		{
+			"chord": "A#m13",
+			"notes": ["A#","C#","F","G#","C","D#","G"]
+		},
+		{
+			"chord": "Bm13",
+			"notes": ["B","D","F#","A","C#","E","G#"]
+		},
+		{
+			"chord": "Cmaj13",
+			"notes": ["C","E","G","B","D","F","A"]
+		},
+		{
+			"chord": "C#maj13",
+			"notes": ["C#","F","G#","C","D#","F#","A#"]
+		},
+		{
+			"chord": "Dmaj13",
+			"notes": ["D","F#","A","C#","E","G","B"]
+		},
+		{
+			"chord": "D#maj13",
+			"notes": ["D#","G","A#","D","F","G#","C"]
+		},
+		{
+			"chord": "Emaj13",
+			"notes": ["E","G#","B","D#","F#","A","C#"]
+		},
+		{
+			"chord": "Fmaj13",
+			"notes": ["F","A","C","E","G","A#","D"]
+		},
+		{
+			"chord": "F#maj13",
+			"notes": ["F#","A#","C#","F","G#","B","D#"]
+		},
+		{
+			"chord": "Gmaj13",
+			"notes": ["G","B","D","F#","A","C","E"]
+		},
+		{
+			"chord": "G#maj13",
+			"notes": ["G#","C","D#","G","A#","C#","F"]
+		},
+		{
+			"chord": "Amaj13",
+			"notes": ["A","C#","E","G#","B","D","F#"]
+		},
+		{
+			"chord": "A#maj13",
+			"notes": ["A#","D","F","A","C","D#","G"]
+		},
+		{
+			"chord": "Bmaj13",
+			"notes": ["B","D#","F#","A#","C#","E","G#"]
+		}
+	]
+},
+{
+	"add9": [
+		{
+			"chord": "Cadd9",
+			"notes": ["C","E","G","D"]
+		},
+		{
+			"chord": "C#add9",
+			"notes": ["C#","F","G#","D#"]
+		},
+		{
+			"chord": "Dadd9",
+			"notes": ["D","F#","A","E"]
+		},
+		{
+			"chord": "D#add9",
+			"notes": ["D#","G","A#","F"]
+		},
+		{
+			"chord": "Eadd9",
+			"notes": ["E","G#","B","F#"]
+		},
+		{
+			"chord": "Fadd9",
+			"notes": ["F","A","C","G"]
+		},
+		{
+			"chord": "F#add9",
+			"notes": ["F#","A#","C#","G#"]
+		},
+		{
+			"chord": "Gadd9",
+			"notes": ["G","B","D","A"]
+		},
+		{
+			"chord": "G#add9",
+			"notes": ["G#","C","D#","A#"]
+		},
+		{
+			"chord": "Aadd9",
+			"notes": ["A","C#","E","B"]
+		},
+		{
+			"chord": "A#add9",
+			"notes": ["A#","D","F","C"]
+		},
+		{
+			"chord": "Badd9",
+			"notes": ["B","D#","F#","C#"]
+		},
+		{
+			"chord": "Cmadd9",
+			"notes": ["C","D#","G","D"]
+		},
+		{
+			"chord": "C#madd9",
+			"notes": ["C#","E","G#","D#"]
+		},
+		{
+			"chord": "Dmadd9",
+			"notes": ["D","F","A","E"]
+		},
+		{
+			"chord": "D#madd9",
+			"notes": ["D#","F#","A#","F"]
+		},
+		{
+			"chord": "Emadd9",
+			"notes": ["E","G","B","F#"]
+		},
+		{
+			"chord": "Fmadd9",
+			"notes": ["F","G#","C","G"]
+		},
+		{
+			"chord": "F#madd9",
+			"notes": ["F#","A","C#","G#"]
+		},
+		{
+			"chord": "Gmadd9",
+			"notes": ["G","A#","D","A"]
+		},
+		{
+			"chord": "G#madd9",
+			"notes": ["G#","B","D#","A#"]
+		},
+		{
+			"chord": "Amadd9",
+			"notes": ["A","C","E","B"]
+		},
+		{
+			"chord": "A#madd9",
+			"notes": ["A#","C#","F","C"]
+		},
+		{
+			"chord": "Bmadd9",
+			"notes": ["B","D","F#","C#"]
+		}
+	]
+},
+{
+	"sus2": [
+		{
+			"chord": "Csus2",
+			"notes": ["C","D","G"]
+		},
+		{
+			"chord": "C#sus2",
+			"notes": ["C#","D#","G#"]
+		},
+		{
+			"chord": "Dsus2",
+			"notes": ["D","E","A"]
+		},
+		{
+			"chord": "D#sus2",
+			"notes": ["D#","F","A#"]
+		},
+		{
+			"chord": "Esus2",
+			"notes": ["E","F#","B"]
+		},
+		{
+			"chord": "Fsus2",
+			"notes": ["F","G","C"]
+		},
+		{
+			"chord": "F#sus2",
+			"notes": ["F#","G#","C#"]
+		},
+		{
+			"chord": "Gsus2",
+			"notes": ["G","A","D"]
+		},
+		{
+			"chord": "G#sus2",
+			"notes": ["G#","A#","D#"]
+		},
+		{
+			"chord": "Asus2",
+			"notes": ["A","B","E"]
+		},
+		{
+			"chord": "A#sus2",
+			"notes": ["A#","C","F"]
+		},
+		{
+			"chord": "Bsus2",
+			"notes": ["B","C#","F#"]
+		}
+	]
+},
+{
+	"fifths": [
+		{
+			"chord": "C5",
+			"notes": ["C","G"]
+		},
+		{
+			"chord": "C#5",
+			"notes": ["C#","G#"]
+		},
+		{
+			"chord": "D5",
+			"notes": ["D","A"]
+		},
+		{
+			"chord": "D#5",
+			"notes": ["D#","A#"]
+		},
+		{
+			"chord": "E5",
+			"notes": ["E","B"]
+		},
+		{
+			"chord": "F5",
+			"notes": ["F","C"]
+		},
+		{
+			"chord": "F#5",
+			"notes": ["F#","C#"]
+		},
+		{
+			"chord": "G5",
+			"notes": ["G","D"]
+		},
+		{
+			"chord": "G#5",
+			"notes": ["G#","D#"]
+		},
+		{
+			"chord": "A5",
+			"notes": ["A","E"]
+		},
+		{
+			"chord": "A#5",
+			"notes": ["A#","F"]
+		},
+		{
+			"chord": "B5",
+			"notes": ["B","F"]
+		}
+	]
+}

@@ -1,0 +1,110 @@
+/**
+* Fonts
+*/
+@import url("https://fonts.googleapis.com/css?family=Reem+Kufi");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Slab:400,600,700");
+/**
+ * Colors
+ */
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #222222;
+  padding: 30px; }
+
+p, h1, h2, h3, h4, h5, a {
+  font-family: "'Reem Kufi', sans-serif"; }
+
+.string {
+  display: flex; }
+
+.tuning-peg {
+  color: white;
+  display: table;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px; }
+  .tuning-peg p {
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell; }
+
+.fret {
+  color: white;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  border: solid 0.5px white; }
+
+.fretNote,
+.fretNumber {
+  display: none; }
+
+.chord-selector_container {
+  width: 100%;
+  height: 350px; }
+
+.chords {
+  display: inline-flex; }
+
+.chord-selector {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  margin: 5px 5px; }
+  .chord-selector.selection1 {
+    background-color: orange; }
+  .chord-selector.selection2 {
+    background-color: red; }
+  .chord-selector.selection3 {
+    background-color: yellow; }
+  .chord-selector.selection4 {
+    background-color: blue; }
+  .chord-selector.selection5 {
+    background-color: pink; }
+  .chord-selector.selection6 {
+    background-color: green; }
+
+.data-output {
+  color: black;
+  height: 50px;
+  width: 300px;
+  background-color: white;
+  border-radius: 2px;
+  margin: 5px 5px; }
+
+.keyboard {
+  margin: 25px 0;
+  height: 150px; }
+
+.key-white {
+  position: relative;
+  height: 100%;
+  width: 50px;
+  background-color: white;
+  border-radius: 2px;
+  display: inline-block;
+  margin: 0;
+  padding: 0; }
+  .key-white:hover {
+    background: yellow; }
+
+.key-black {
+  position: relative;
+  left: 38px;
+  height: 100px;
+  width: 25px;
+  background-color: black;
+  border-radius: 2px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  z-index: 2; }
+  .key-black.hidden {
+    visibility: hidden; }
+  .key-black:hover {
+    background: yellow; }

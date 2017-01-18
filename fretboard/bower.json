@@ -1,0 +1,10 @@
+{
+  "name": "fretboard",
+  "description": "guitar to piano roll application",
+  "main": "app.js",
+  "authors": [
+    "Christopher Melville <chris.melville@phntms.com>"
+  ],
+  "license": "MIT",
+  "homepage": ""
+}
