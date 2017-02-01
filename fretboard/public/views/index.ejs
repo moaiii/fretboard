@@ -1,9 +1,17 @@
 
 	<%- include head.ejs %>
 
-  <body ng-app="FretboardApp" ng-controller="GuitarController">
+  <body ng-app="app" ng-controller="InitController as init">
 
-		<div ng-view></div>
+		<%- include logo.ejs %>
+
+		<h1>{{init.title}}</h1>
+
+		<div ng-controller="GuitarController as guitar">
+
+			<%- include fretboard.ejs %>
+
+		</div>
 
   </body>
 

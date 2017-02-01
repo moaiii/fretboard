@@ -1,1 +1,7 @@
-angular.module('FretboardApp', ['ngRoute', 'app-routes', 'guitar-controller', 'guitar-service']);
+angular.module('app', [
+	'ngRoute',
+	'appRoutes',
+	'GuitarCtrl',
+	'InitCtrl',
+	'Notemap.App.Service'
+]);

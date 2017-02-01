@@ -24,9 +24,22 @@
 	height: 40px;
 	border-radius: 4px;
 	border: solid 0.5px white;
+
+	&:hover {
+		background-color: white;
+		opacity: 0.2;
+
+		> .fret_note {
+			display: block;
+		}
+	}
 }
 
-.fretNote,
-.fretNumber {
+.fret_note,
+.fret_number {
 	display: none;
+}
+
+.tuning_selector {
+	height: 42px;
 }

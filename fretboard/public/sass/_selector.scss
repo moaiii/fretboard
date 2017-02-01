@@ -15,24 +15,14 @@
   margin: 5px 5px;
 
   &.selection1 {
-    background-color: orange;
-  }
-  &.selection2 {
     background-color: red;
   }
-  &.selection3 {
-    background-color: yellow;
-  }
-  &.selection4 {
-    background-color: blue;
-  }
-  &.selection5 {
-    background-color: pink;
-  }
-  &.selection6 {
+  &.selection2 {
     background-color: green;
   }
-
+  &.selection3 {
+    background-color: blue;
+  }
 }
 
 .data-output {
