@@ -1,0 +1,14 @@
+<div class="chord-bank_container">
+	<div class="chordbank chordbank-one">
+		<div class="chord-bank bank-one" data-array="chord-bank-one"
+			ng-click="guitar.chordbankSelected($event)"></div>
+
+		<div class="data-output output-one" data-array="chord-bank-one">
+			<h1 ng-model="guitar.service.data.chordbanks[0].name">
+				{{guitar.service.data.chordbanks[0].name}}</h1>
+			<p ng-repeat="subset in guitar.service.data.chordbanks[0].subsets
+				track by $index">
+				{{subset.name}}</p>
+		</div>
+	</div>
+</div>

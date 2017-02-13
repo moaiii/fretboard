@@ -49,34 +49,56 @@ p, h1, h2, h3, h4, h5, a {
 .fret_number {
   display: none; }
 
-.tuning_selector {
-  height: 42px; }
+.tuning-selection > select {
+  height: 50px;
+  margin: 20px 0; }
 
-.chord-selector_container {
+.tuning-peg {
+  color: black;
+  height: 43px;
+  margin: 0 5px; }
+
+.tuning-selector_container {
+  margin: 50px 0; }
+  .tuning-selector_container select {
+    height: 50px;
+    width: 300px; }
+
+.chord_filter-input {
+  width: 20px;
+  height: 20px; }
+
+.chord_filter-label {
+  font-family: "'Reem Kufi', sans-serif";
+  color: white; }
+
+.chord-bank_container {
   width: 100%;
-  height: 350px; }
+  height: 150px; }
+  .chord-bank_container.hidden {
+    display: none; }
 
 .chords {
   display: inline-flex; }
 
-.chord-selector {
+.chord-bank {
   display: block;
   width: 50px;
   height: 50px;
   border-radius: 4px;
-  margin: 5px 5px; }
-  .chord-selector.selection1 {
+  margin: 5px 5px;
+  cursor: pointer; }
+  .chord-bank.bank-one {
     background-color: red; }
-  .chord-selector.selection2 {
+  .chord-bank.bank-two {
     background-color: green; }
-  .chord-selector.selection3 {
+  .chord-bank.bank-three {
     background-color: blue; }
 
 .data-output {
   color: black;
   height: 50px;
-  width: 300px;
-  background-color: white;
+  width: 100%;
   border-radius: 2px;
   margin: 5px 5px; }
 
@@ -84,17 +106,21 @@ p, h1, h2, h3, h4, h5, a {
   margin: 25px 0;
   height: 150px; }
 
+.key:hover {
+  background: yellow; }
+
+.white-keys_container {
+  position: absolute; }
+
 .key-white {
   position: relative;
-  height: 100%;
+  height: 150px;
   width: 50px;
   background-color: white;
   border-radius: 2px;
   display: inline-block;
   margin: 0;
   padding: 0; }
-  .key-white:hover {
-    background: yellow; }
 
 .key-black {
   position: relative;
@@ -107,10 +133,20 @@ p, h1, h2, h3, h4, h5, a {
   margin: 0;
   padding: 0;
   z-index: 2; }
-  .key-black.hidden {
-    visibility: hidden; }
-  .key-black:hover {
-    background: yellow; }
+  .key-black:nth-child(1) {
+    margin-left: 2px; }
+  .key-black:nth-child(2) {
+    margin-left: 25px; }
+  .key-black:nth-child(3) {
+    margin-left: 79px; }
+  .key-black:nth-child(4) {
+    margin-left: 25px; }
+  .key-black:nth-child(5) {
+    margin-left: 25px; }
+  .key-black.selected {
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black; }
 
 .logo_container {
   position: relative;

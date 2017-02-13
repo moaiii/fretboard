@@ -1,18 +1,14 @@
-
 	<%- include head.ejs %>
-
   <body ng-app="app" ng-controller="InitController as init">
-
 		<%- include logo.ejs %>
-
-		<h1>{{init.title}}</h1>
-
 		<div ng-controller="GuitarController as guitar">
-
+			<div class="tuning-selection"></div>
+			<%- include chord-filters.ejs %>
 			<%- include fretboard.ejs %>
-
+			<%- include selectors.ejs %>
+			<div class="keyboard">
+				<%- include keyboard.ejs %>
+			</div>
 		</div>
-
   </body>
-
 </html>

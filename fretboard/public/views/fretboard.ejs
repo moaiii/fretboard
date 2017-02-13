@@ -1,59 +1,339 @@
-<ul>
-	<li ng-repeat="(key, value) in chords">{{ key }}</li>
-</ul>
+<div class="tuning-selector_container">
+	<select id="tuning-selector"
+		ng-model="tuning"
+		ng-change="guitar.onTuningChange()">
+	</select>
+</div>
 
 <div class="fretboard">
 	<div class="string string-1" data-frets="frets-string-1" data-tuning="tuning-string-1">
 		<div class="tuning-peg peg-1">
 			<p id="tuning-string-1"></p>
 		</div>
-		<div class="frets" id="frets-string-1"></div>
+		<div class="frets" id="frets-string-1">
+			<fret class="fret" id="0-0" info="0-0" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="0-1" info="0-1" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="0-2" info="0-2" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="0-3" info="0-3" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="0-4" info="0-4" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="0-5" info="0-5" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="0-6" info="0-6" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="0-7" info="0-7" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="0-8" info="0-8" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="0-9" info="0-9" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="0-10" info="0-10" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="0-11" info="0-11" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="0-12" info="0-12" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="0-13" info="0-13" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="0-14" info="0-14" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="0-15" info="0-15" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="0-16" info="0-16" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="0-17" info="0-17" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="0-18" info="0-18" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="0-19" info="0-19" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="0-20" info="0-20" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="0-21" info="0-21" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="0-22" info="0-22" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="0-23" info="0-23" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+		</div>
 	</div>
 	<div class="string string-2" data-frets="frets-string-2" data-tuning="tuning-string-2">
 		<div class="tuning-peg peg-2">
 			<p id="tuning-string-2"></p>
 		</div>
-		<div class="frets" id="frets-string-2"></div>
+		<div class="frets" id="frets-string-2">
+			<fret class="fret" id="1-0" info="1-0" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="1-1" info="1-1" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="1-2" info="1-2" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="1-3" info="1-3" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="1-4" info="1-4" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="1-5" info="1-5" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="1-6" info="1-6" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="1-7" info="1-7" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="1-8" info="1-8" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="1-9" info="1-9" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="1-10" info="1-10" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="1-11" info="1-11" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="1-12" info="1-12" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="1-13" info="1-13" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="1-14" info="1-14" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="1-15" info="1-15" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="1-16" info="1-16" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="1-17" info="1-17" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="1-18" info="1-18" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="1-19" info="1-19" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="1-20" info="1-20" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="1-21" info="1-21" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="1-22" info="1-22" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="1-23" info="1-23" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+		</div>
 	</div>
 	<div class="string string-3" data-frets="frets-string-3" data-tuning="tuning-string-3">
 		<div class="tuning-peg peg-3">
 			<p id="tuning-string-3"></p>
 		</div>
-		<div class="frets" id="frets-string-3"></div>
+		<div class="frets" id="frets-string-3">
+			<fret class="fret" id="2-0" info="2-0" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="2-1" info="2-1" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="2-2" info="2-2" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="2-3" info="2-3" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="2-4" info="2-4" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="2-5" info="2-5" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="2-6" info="2-6" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="2-7" info="2-7" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="2-8" info="2-8" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="2-9" info="2-9" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="2-10" info="2-10" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="2-11" info="2-11" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="2-12" info="2-12" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="2-13" info="2-13" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="2-14" info="2-14" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="2-15" info="2-15" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="2-16" info="2-16" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="2-17" info="2-17" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="2-18" info="2-18" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="2-19" info="2-19" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="2-20" info="2-20" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="2-21" info="2-21" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="2-22" info="2-22" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="2-23" info="2-23" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+		</div>
 	</div>
 	<div class="string string-4" data-frets="frets-string-4" data-tuning="tuning-string-4">
 		<div class="tuning-peg peg-4">
 			<p id="tuning-string-4"></p>
 		</div>
-		<div class="frets" id="frets-string-4"></div>
+		<div class="frets" id="frets-string-4">
+			<fret class="fret" id="3-0" info="3-0" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="3-1" info="3-1" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="3-2" info="3-2" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="3-3" info="3-3" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="3-4" info="3-4" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="3-5" info="3-5" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="3-6" info="3-6" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="3-7" info="3-7" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="3-8" info="3-8" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="3-9" info="3-9" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="3-10" info="3-10" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="3-11" info="3-11" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="3-12" info="3-12" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="3-13" info="3-13" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="3-14" info="3-14" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="3-15" info="3-15" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="3-16" info="3-16" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="3-17" info="3-17" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="3-18" info="3-18" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="3-19" info="3-19" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="3-20" info="3-20" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="3-21" info="3-21" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="3-22" info="3-22" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="3-23" info="3-23" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+		</div>
 	</div>
 	<div class="string string-5" data-frets="frets-string-5" data-tuning="tuning-string-5">
 		<div class="tuning-peg peg-5">
 			<p id="tuning-string-5"></p>
 		</div>
-		<div class="frets" id="frets-string-5"></div>
+		<div class="frets" id="frets-string-5">
+			<fret class="fret" id="4-0" info="4-0" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="4-1" info="4-1" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="4-2" info="4-2" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="4-3" info="4-3" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="4-4" info="4-4" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="4-5" info="4-5" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="4-6" info="4-6" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="4-7" info="4-7" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="4-8" info="4-8" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="4-9" info="4-9" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="4-10" info="4-10" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="4-11" info="4-11" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="4-12" info="4-12" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="4-13" info="4-13" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="4-14" info="4-14" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="4-15" info="4-15" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="4-16" info="4-16" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="4-17" info="4-17" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="4-18" info="4-18" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="4-19" info="4-19" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="4-20" info="4-20" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="4-21" info="4-21" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="4-22" info="4-22" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="4-23" info="4-23" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+		</div>
 	</div>
 	<div class="string string-6" data-frets="frets-string-6" data-tuning="tuning-string-6">
 		<div class="tuning-peg peg-6">
 			<p id="tuning-string-6"></p>
 		</div>
-		<div class="frets" id="frets-string-6"></div>
-	</div>
-</div>
-
-
-<div class="chord-selector_container">
-	<div class="chords">
-		<div class="chord-selector selection1" data-array="one"></div>
-		<div class="data-output output1" data-array="one">
+		<div class="frets" id="frets-string-6">
+			<fret class="fret" id="5-0" info="5-0" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="5-1" info="5-1" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="5-2" info="5-2" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="5-3" info="5-3" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="5-4" info="5-4" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="5-5" info="5-5" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="5-6" info="5-6" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="5-7" info="5-7" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="5-8" info="5-8" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="5-9" info="5-9" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="5-10" info="5-10" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="5-11" info="5-11" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="5-12" info="5-12" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="5-13" info="5-13" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="5-14" info="5-14" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="5-15" info="5-15" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="5-16" info="5-16" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="5-17" info="5-17" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="5-18" info="5-18" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="5-19" info="5-19" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="5-20" info="5-20" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="5-21" info="5-21" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="5-22" info="5-22" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
+			<fret class="fret" id="5-23" info="5-23" note="A"
+				selected="false" ng-click="guitar.noteSelected($event)"></fret>
 		</div>
-	</div>
-	<div class="chords">
-		<div class="chord-selector selection2" data-array="two"></div>
-		<div class="data-output output2" data-array="two"></div>
-	</div>
-	<div class="chords">
-		<div class="chord-selector selection3" data-array="three"></div>
-		<div class="data-output output3" data-array="three"></div>
 	</div>
 </div>

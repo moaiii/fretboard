@@ -1,26 +1,31 @@
-.chord-selector_container {
+.chord-bank_container {
   width: 100%;
-  height: 350px;
+  height: 150px;
+
+	&.hidden {
+		display: none;
+	}
 }
 
 .chords {
   display: inline-flex;
 }
 
-.chord-selector {
+.chord-bank {
   display: block;
   width: 50px;
   height: 50px;
   border-radius: 4px;
   margin: 5px 5px;
+	cursor: pointer;
 
-  &.selection1 {
+  &.bank-one {
     background-color: red;
   }
-  &.selection2 {
+  &.bank-two {
     background-color: green;
   }
-  &.selection3 {
+  &.bank-three {
     background-color: blue;
   }
 }
@@ -28,8 +33,7 @@
 .data-output {
 	color: black;
   height: 50px;
-  width: 300px;
-  background-color: white;
+  width: 100%;
   border-radius: 2px;
   margin: 5px 5px;
 }

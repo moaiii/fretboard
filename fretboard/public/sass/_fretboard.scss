@@ -40,6 +40,34 @@
 	display: none;
 }
 
-.tuning_selector {
-	height: 42px;
+.tuning-selection {
+	> select {
+		height: 50px;
+		margin: 20px 0;
+	}
+}
+
+.tuning-peg {
+	color: black;
+	height: 43px;
+	margin: 0 5px;
+}
+
+.tuning-selector_container {
+	margin: 50px 0;
+
+	select {
+		height: 50px;
+		width: 300px;
+	}
+}
+
+.chord_filter-input {
+	width: 20px;
+	height: 20px;
+}
+
+.chord_filter-label {
+	font-family: $font;
+	color: white;
 }
