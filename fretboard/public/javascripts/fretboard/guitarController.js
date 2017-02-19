@@ -3,51 +3,128 @@ angular.module('GuitarCtrl', [])
 
 		this.service = NotemapApp;
 
-		this.tuning = null;
-
     this.onTuningChange = function() {
-			var select = document.getElementById('tuning-selector');
+      var select = document.getElementById('tuning-selector');
 
-			NotemapApp.data.tuningSelected.name = select.options[select.selectedIndex].text;
-			NotemapApp.data.tuningSelected.notes = select.value.split(",");
+      NotemapApp.data.tuningSelected.name = select.options[select.selectedIndex].text;
+      NotemapApp.data.tuningSelected.notes = select.value.split(",");
 
-			NotemapApp.getFretboard();
-			NotemapApp.setFretboard();
-			NotemapApp.setTuningPegs();
+      NotemapApp.getFretboard();
+      NotemapApp.setFretboard();
+      NotemapApp.setTuningPegs();
     };
+
+
+
 
     this.noteSelected = function(event) {
-			console.log('note selected: ' + event.target.attributes[3].value);
-			console.log('selected?: ' + event.target.attributes[4].value);
 
-			if(event.target.attributes[4].value == 'true') {
-				console.log('to be deleted');
-				event.target.setAttribute('selected', 'false');
-				NotemapApp.deleteNote( event.target, event.target.attributes[3].value);
-				this.unhighlightKey(event.target.attributes[3].value);
-			} else {
-				console.log('to be added');
-				event.target.setAttribute('selected', 'true');
-				NotemapApp.addNote( event.target, event.target.attributes[3].value);
-				this.highlightKey(event.target.attributes[3].value);
-			}
+			var stringId = event.target.attributes[1].value.split('-')[0];
+			var fretId = event.target.attributes[1].value.split('-')[1];
+			var note = event.target.attributes[3].value;
+			var isSelected = event.target.attributes[4].value;
+
+      if(isSelected == 'true') {
+        NotemapApp.deleteNote(stringId, fretId, note);
+
+      } else {
+        NotemapApp.addNote(stringId, fretId, note);
+      }
     };
 
-		this.highlightKey = function(note) {
-			NotemapApp.highlightKey(note);
-		};
+
+
+
+    this.highlightKey = function(note) {
+
+      NotemapApp.highlightKey(note);
+    };
+
+
+
 
     this.chordbankSelected = function(event) {
-      NotemapApp.setChordbank(event.target.attributes[1].value);
+
+      NotemapApp.setChordbankSelection(event.target.attributes[1].value);
     };
 
-		this.filterChange = function(event) {
-			for(var i = 0; i < NotemapApp.elements.chord_filters.length; i++) {
-				if(NotemapApp.elements.chord_filters[i].element.value ==
-					event.target.value) {
-						NotemapApp.elements.chord_filters[i].isChecked =
-							event.target.checked;
-					}
-			}
+
+
+
+		// variables for chord difference hover states
+		this.hoverName = null;
+		this.hoverNotes = null;
+		this.difference = null;
+		this.hoverStringIds = [];
+		this.hoverFretIds = [];
+
+		this.mouseoverChord = function(event) {
+
+			this.hoverName = event.target.attributes[2].value;
+			this.hoverNotes = event.target.attributes[3].value.split(',');
+			this.difference = this.getChordDifference(this.hoverNotes);
+
+			this.difference.forEach(function(elem){
+				this.difference.id = NotemapApp.findFretboardId(elem.note);
+				this.hoverStringsIds.push(this.difference.id.split("-")[0]);
+				this.hoverFretIds.push(this.difference.id.split("-")[1]);
+			});
+
+			this.highlightElements(true);
+
 		};
+
+
+
+
+		this.highlightElements = function(highlight) {
+			this.difference.forEach(function(elm) {
+				NotemapApp.highlightKey(elm.note, 'rgb(244, 66, 255)', highlight);
+				NotemapApp.highlightFretboard(
+					this.hoverStringId, this.hoverFretId, 'rgb(244, 66, 255)');
+				});
+		};
+
+
+
+
+		this.mouseleaveChord = function() {
+			this.difference.forEach(function(elm) {
+				NotemapApp.highlightKey(elm, 'rgb(244, 66, 66)', false);
+				NotemapApp.unhighlightFretboard(
+						this.hoverStringId, this.hoverFretId);
+			});
+			this.clearHoverStateVariables();
+		};
+
+
+
+
+		this.clearHoverStateVariables_ = function() {
+			this.hoverName = null;
+			this.hoverNotes.splice(0, this.hoverNotes.length);
+			this.difference.splice(0, this.difference.length);
+			this.hoverStringId = null;
+			this.hoverFretId = null;
+		};
+
+
+
+
+		this.getChordDifference = function(searchNotes) {
+			var difference = [];
+			var set = NotemapApp.data.chordbanks[0].notes;
+			var setToArray = Array.from(set);
+			var obj = {};
+
+			searchNotes.forEach(function(elem){
+				if(setToArray.indexOf(elem) < 0) {
+					obj.note = elem;
+					difference.push(obj);
+				}
+			});
+
+			return difference;
+		};
+
 });

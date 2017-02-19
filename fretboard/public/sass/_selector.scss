@@ -37,3 +37,49 @@
   border-radius: 2px;
   margin: 5px 5px;
 }
+
+.chord_filter-container {
+	display: table-cell;
+  margin: 10px 0;
+  position: absolute;
+  left: 117px;
+  top: 464px;
+}
+
+.chord_filter-selection {
+	width: 46px;
+  height: 25px;
+  display: inline-block;
+  text-align: center;
+	cursor: pointer;
+}
+
+.chord_filter-label {
+	border: solid 1px white;
+	border-radius: 4px;
+	height: 100%;
+	font-family: $font;
+	width: 100%;
+	background-color: $opaque;
+
+	&.active {
+		background-color: darkorange;
+	}
+
+	&:hover {
+
+	}
+}
+
+.subset_results-name {
+	font-size: 1.2em;
+	padding: 5px;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.subset_results-notes {
+	font-size: 1em;
+}

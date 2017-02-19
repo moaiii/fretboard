@@ -26,8 +26,7 @@
 	border: solid 0.5px white;
 
 	&:hover {
-		background-color: white;
-		opacity: 0.2;
+		background-color: rgba(255, 255, 255, 0.2);
 
 		> .fret_note {
 			display: block;
@@ -70,4 +69,60 @@
 .chord_filter-label {
 	font-family: $font;
 	color: white;
+}
+
+.fret_marker {
+	position: absolute;
+	display: block;
+	width: 26px;
+	height: 26px;
+	border-radius: 13px;
+	background-color: white;
+
+	&.fret_3 {
+		left: 236px;
+		top: 304px;
+  }
+  &.fret_5 {
+		left: 328px;
+		top: 304px;
+  }
+  &.fret_7 {
+		left: 420px;
+		top: 304px;
+  }
+  &.fret_9 {
+		left: 513px;
+    top: 304px;
+  }
+  &.fret_12-top {
+		top: 257px;
+    left: 650px;
+  }
+	&.fret_12-bottom {
+		top: 349px;
+    left: 650px;
+	}
+	&.fret_15 {
+		left: 788px;
+    top: 304px;
+	}
+	&.fret_17{
+		left: 883px;
+		top: 304px;
+	}
+	&.fret_19{
+		left: 972px;
+    top: 304px;
+	}
+}
+
+.nut {
+	width: 4px;
+	height: 281px;
+	position: absolute;
+	left: 132px;
+	top: 176px;
+	background: red;
+	border-radius: 8px;
 }

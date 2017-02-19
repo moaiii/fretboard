@@ -1,11 +1,12 @@
 .keyboard {
-  margin: 25px 0;
+	display: table;
+  margin: 50px auto;
   height: 150px;
 }
 
 .key {
 	&:hover {
-		background: yellow;
+		background-color: cornflowerblue;
 	}
 }
 
@@ -24,6 +25,10 @@
   display: inline-block;
   margin: 0;
   padding: 0;
+
+	&.default {
+		background-color: white !important;
+	}
 }
 
 .key-black {
@@ -58,5 +63,9 @@
 		border-bottom: 2px solid black;
 		border-left: 2px solid black;
 		border-right: 2px solid black;
+	}
+
+	&.default {
+		background-color: black !important;
 	}
 }

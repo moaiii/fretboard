@@ -40,8 +40,7 @@ p, h1, h2, h3, h4, h5, a {
   border-radius: 4px;
   border: solid 0.5px white; }
   .fret:hover {
-    background-color: white;
-    opacity: 0.2; }
+    background-color: rgba(255, 255, 255, 0.2); }
     .fret:hover > .fret_note {
       display: block; }
 
@@ -72,42 +71,57 @@ p, h1, h2, h3, h4, h5, a {
   font-family: "'Reem Kufi', sans-serif";
   color: white; }
 
-.chord-bank_container {
-  width: 100%;
-  height: 150px; }
-  .chord-bank_container.hidden {
-    display: none; }
-
-.chords {
-  display: inline-flex; }
-
-.chord-bank {
+.fret_marker {
+  position: absolute;
   display: block;
-  width: 50px;
-  height: 50px;
-  border-radius: 4px;
-  margin: 5px 5px;
-  cursor: pointer; }
-  .chord-bank.bank-one {
-    background-color: red; }
-  .chord-bank.bank-two {
-    background-color: green; }
-  .chord-bank.bank-three {
-    background-color: blue; }
+  width: 26px;
+  height: 26px;
+  border-radius: 13px;
+  background-color: white; }
+  .fret_marker.fret_3 {
+    left: 236px;
+    top: 304px; }
+  .fret_marker.fret_5 {
+    left: 328px;
+    top: 304px; }
+  .fret_marker.fret_7 {
+    left: 420px;
+    top: 304px; }
+  .fret_marker.fret_9 {
+    left: 513px;
+    top: 304px; }
+  .fret_marker.fret_12-top {
+    top: 257px;
+    left: 650px; }
+  .fret_marker.fret_12-bottom {
+    top: 349px;
+    left: 650px; }
+  .fret_marker.fret_15 {
+    left: 788px;
+    top: 304px; }
+  .fret_marker.fret_17 {
+    left: 883px;
+    top: 304px; }
+  .fret_marker.fret_19 {
+    left: 972px;
+    top: 304px; }
 
-.data-output {
-  color: black;
-  height: 50px;
-  width: 100%;
-  border-radius: 2px;
-  margin: 5px 5px; }
+.nut {
+  width: 4px;
+  height: 281px;
+  position: absolute;
+  left: 132px;
+  top: 176px;
+  background: red;
+  border-radius: 8px; }
 
 .keyboard {
-  margin: 25px 0;
+  display: table;
+  margin: 50px auto;
   height: 150px; }
 
 .key:hover {
-  background: yellow; }
+  background-color: cornflowerblue; }
 
 .white-keys_container {
   position: absolute; }
@@ -121,6 +135,8 @@ p, h1, h2, h3, h4, h5, a {
   display: inline-block;
   margin: 0;
   padding: 0; }
+  .key-white.default {
+    background-color: white !important; }
 
 .key-black {
   position: relative;
@@ -147,6 +163,8 @@ p, h1, h2, h3, h4, h5, a {
     border-bottom: 2px solid black;
     border-left: 2px solid black;
     border-right: 2px solid black; }
+  .key-black.default {
+    background-color: black !important; }
 
 .logo_container {
   position: relative;
@@ -180,3 +198,90 @@ h1.logo_text {
     background-color: #222222;
     color: white;
     mix-blend-mode: multiply; }
+
+.mpc {
+  display: block;
+  width: 220px;
+  position: relative;
+  left: 44%;
+  bottom: 17px; }
+
+.mpc_container {
+  display: block;
+  height: 100%;
+  width: 100%; }
+
+.pad {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0);
+  border: 1px solid white;
+  border-radius: 4px;
+  float: left; }
+  .pad:hover {
+    background-color: cornflowerblue; }
+  .pad.selected {
+    display: table-cell; }
+
+.chord-bank_container {
+  width: 100%;
+  height: 150px; }
+  .chord-bank_container.hidden {
+    display: none; }
+
+.chords {
+  display: inline-flex; }
+
+.chord-bank {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  margin: 5px 5px;
+  cursor: pointer; }
+  .chord-bank.bank-one {
+    background-color: red; }
+  .chord-bank.bank-two {
+    background-color: green; }
+  .chord-bank.bank-three {
+    background-color: blue; }
+
+.data-output {
+  color: black;
+  height: 50px;
+  width: 100%;
+  border-radius: 2px;
+  margin: 5px 5px; }
+
+.chord_filter-container {
+  display: table-cell;
+  margin: 10px 0;
+  position: absolute;
+  left: 117px;
+  top: 464px; }
+
+.chord_filter-selection {
+  width: 46px;
+  height: 25px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer; }
+
+.chord_filter-label {
+  border: solid 1px white;
+  border-radius: 4px;
+  height: 100%;
+  font-family: "'Reem Kufi', sans-serif";
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0); }
+  .chord_filter-label.active {
+    background-color: darkorange; }
+
+.subset_results-name {
+  font-size: 1.2em;
+  padding: 5px; }
+  .subset_results-name:hover {
+    cursor: pointer; }
+
+.subset_results-notes {
+  font-size: 1em; }

@@ -16,23 +16,32 @@ angular.module('InitCtrl', [])
       });
     };
 
+
+
     Init.App.prototype._init = function() {
+
       this.tuning = this._initTuning();
       NotemapApp.elements.tuning_pegs = this._createTuningPegs();
       this._appendPegs(NotemapApp.elements.tuning_pegs);
       this.strings = this._getStrings();
       this._createTuningSelector(this.frets, this.tuning);
       NotemapApp.getFretboard();
-      this.frets = this._initFrets();
+      this.frets = this.getFretboardElements();
+			this.frets = NotemapApp.setFretboard();
       this.initChordBanks();
-      this.getKeys();
-			this.initFilters();
+      NotemapApp.elements.keyboard = this.getKeys();
+      NotemapApp.elements.mpc = this.getPads();
     };
 
+
+
     Init.App.prototype._initTuning = function() {
+
       NotemapApp.data.tuningSelected.name = "Standard";
       NotemapApp.data.tuningSelected.notes = NotemapApp.data.tunings.STANDARD;
     };
+
+
 
     Init.App.prototype._createTuningPegs = function() {
 
@@ -59,51 +68,67 @@ angular.module('InitCtrl', [])
     };
 
 
-    Init.App.prototype._createTuningSelector = function() {
-      NotemapApp.data.tuningSelected.element =
-				document.getElementById("tuning-selector");
 
-      for(var key in NotemapApp.data.tunings) {
-        var value = NotemapApp.data.tunings[key];
+    Init.App.prototype._createTuningSelector = function() {
+
+      NotemapApp.data.tuningSelected.element =
+        document.getElementById("tuning-selector");
+
+      for(var tuning in NotemapApp.data.tunings) {
+        var value = NotemapApp.data.tunings[tuning];
         var option = document.createElement("option");
         option.setAttribute("value", value);
-        option.text = key;
+        option.text = tuning;
+				if(tuning == 'STANDARD') {
+					option.selected = true;
+				}
         NotemapApp.data.tuningSelected.element.appendChild(option);
       }
-
       return NotemapApp.data.tuningSelected.element;
     };
 
 
+
     Init.App.prototype._appendPegs = function(pegs){
+
       for(var i = 1; i <= NotemapApp.const.NUM_STRINGS; i++){
           document.getElementsByClassName("peg-" + i)[0].appendChild(pegs[i-1]);
       }
     };
 
 
+
     Init.App.prototype._getStrings = function() {
+
       return document.getElementsByClassName("string");
     };
 
 
-     Init.App.prototype._initFrets = function() {
-       for(var i = 0; i < 6; i++){
-         for(var j = 0; j < NotemapApp.const.NECK_LENGTH; j++){
-           document.getElementById(i + "-" + j)
-             .setAttribute("note", NotemapApp.getNote(i, j));
+
+     Init.App.prototype.getFretboardElements = function() {
+
+       for(var i = 0; i < NotemapApp.const.NUM_STRINGS; i++){
+				 var string = [];
+
+				 for(var j = 0; j < NotemapApp.const.NECK_LENGTH; j++){
+           var fret = document.getElementById(i + "-" + j);
+					 string.push(fret);
          }
+				 NotemapApp.elements.fretboard.push(string);
        }
      };
 
 
+
      Init.App.prototype.initChordBanks = function() {
+
        var domElements = document.getElementsByClassName('chord-bank');
        for(var i = 0; i < domElements.length; i++) {
          NotemapApp.data.chordbanks.push(
            {
              name: domElements[i].attributes[1].value,
              notes: new Set(),
+						 array: [],
              color: $(domElements[i]).css("background-color"),
              selected: false,
              subsets: []
@@ -113,21 +138,31 @@ angular.module('InitCtrl', [])
      };
 
 
+
+		/**
+		 *	Gets keys from the dom
+		 *  @returns {Array}
+		 */
+
     Init.App.prototype.getKeys = function() {
-      var keys = document.getElementsByClassName('key');
-      NotemapApp.elements.keyboard.push(keys);
+
+      return [].slice.call(document.getElementsByClassName('key'))
     };
 
 
-		Init.App.prototype.initFilters = function() {
-			var filters = document.getElementsByClassName('chord_filter-input');
-			for(var i = 0; i < filters.length; i++){
-				var filter = {};
-				filter.element = filters[i];
-				filter.isChecked = filters[i].checked;
-				NotemapApp.elements.chord_filters.push(filter)
-			}
-		};
+
+
+		/**
+		 *	Gets pads from the dom
+		 *  @returns {Array}
+		 */
+
+    Init.App.prototype.getPads = function() {
+
+      return [].slice.call(document.getElementsByClassName('pad'));
+    };
+
+
 
 
      window.onload = function() {
