@@ -4,9 +4,13 @@ angular.module('MpcCtrl', [])
 		this.padClicked = function(event) {
 
 			var note = this._getNote(event);
-			var isSelected = this._isSelected(event);
+			var selected = event.target.attributes[4].value;
 
-			console.log(note);
+			if(selected === 'true') {
+				selected = 'false';
+			} else {
+				selected = 'true';
+			}
 
 			NotemapApp.addNote();
 
@@ -19,7 +23,7 @@ angular.module('MpcCtrl', [])
 		this.padMouseOver = function(event) {
 
 			var note = this._getNote(event);
-			console.log('pad hover: ' + note);
+			NotemapApp.addHighlightNote(note);
 		};
 
 
@@ -28,7 +32,7 @@ angular.module('MpcCtrl', [])
 		this.padMouseLeave = function(event) {
 
 			var note = this._getNote(event);
-			console.log('pad un-hover: ' + note);
+			NotemapApp.removeHighlightNote(note);
 		};
 
 
@@ -36,15 +40,10 @@ angular.module('MpcCtrl', [])
 
 		this._getNote = function(event) {
 
-			return event.target.attributes[2].value;
-		};
+			var notes = [];
+			notes.push(event.target.attributes[2].value);
 
-
-
-
-		this._isSelected = function(event) {
-
-			return event.target.attributes[4].value;
+			return notes;
 		};
 
 	});

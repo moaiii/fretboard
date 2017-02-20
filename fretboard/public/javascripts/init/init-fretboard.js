@@ -37,8 +37,8 @@ angular.module('InitCtrl', [])
 
     Init.App.prototype._initTuning = function() {
 
-      NotemapApp.data.tuningSelected.name = "Standard";
-      NotemapApp.data.tuningSelected.notes = NotemapApp.data.tunings.STANDARD;
+      NotemapApp.data.tuning_selected.name = "Standard";
+      NotemapApp.data.tuning_selected.notes = NotemapApp.data.tunings.STANDARD;
     };
 
 
@@ -60,7 +60,7 @@ angular.module('InitCtrl', [])
             option.text = NotemapApp.const.CHROMATIC_SCALE[j];
             pegs[i].appendChild(option);
         }
-        var startingTuning = NotemapApp.data.tuningSelected.notes[i];
+        var startingTuning = NotemapApp.data.tuning_selected.notes[i];
         var index = NotemapApp.const.CHROMATIC_SCALE.indexOf(startingTuning);
         pegs[i].selectedIndex = index;
       }
@@ -71,7 +71,7 @@ angular.module('InitCtrl', [])
 
     Init.App.prototype._createTuningSelector = function() {
 
-      NotemapApp.data.tuningSelected.element =
+      NotemapApp.data.tuning_selected.element =
         document.getElementById("tuning-selector");
 
       for(var tuning in NotemapApp.data.tunings) {
@@ -82,9 +82,9 @@ angular.module('InitCtrl', [])
 				if(tuning == 'STANDARD') {
 					option.selected = true;
 				}
-        NotemapApp.data.tuningSelected.element.appendChild(option);
+        NotemapApp.data.tuning_selected.element.appendChild(option);
       }
-      return NotemapApp.data.tuningSelected.element;
+      return NotemapApp.data.tuning_selected.element;
     };
 
 

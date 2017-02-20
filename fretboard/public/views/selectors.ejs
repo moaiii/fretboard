@@ -1,22 +1,14 @@
 <div class="chord-bank_container">
 	<div class="chordbank chordbank-one">
 		<div class="chord-bank bank-one" data-array="chord-bank-one"
-			ng-click="guitar.chordbankSelected($event)"></div>
-		<div class="data-output output-one" data-array="chord-bank-one">
-			<h1 ng-model="guitar.service.data.chordbanks[0].name">
-				{{guitar.service.data.chordbanks[0].name}}</h1>
-			<h2 ng-repeat="note in guitar.service.data.chordbanks[0].array
-					track by $index">
-				{{note}}</h2>
-			<p class="subset_results-name"
-				 ng-repeat="subset in guitar.service.data.chordbanks[0].subsets
-				 track by $index" data-name="{{subset | chord_filter_name}}"
-				 data-notes="{{subset | chord_filter_notes}}"
-				 ng-mouseover="guitar.mouseoverChord($event)"
-				 ng-mouseleave="guitar.mouseleaveChord($event)">
-				{{subset | chord_filter_name}} </br>
-				{{subset | chord_filter_notes}}
-			</p>
-		</div>
+			ng-click="select.chordbankSelected($event)"></div>
+	</div>
+	<div class="chordbank chordbank-two">
+		<div class="chord-bank bank-two" data-array="chord-bank-two"
+			ng-click="select.chordbankSelected($event)"></div>
+	</div>
+	<div class="chordbank chordbank-three">
+		<div class="chord-bank bank-three" data-array="chord-bank-three"
+			ng-click="select.chordbankSelected($event)"></div>
 	</div>
 </div>

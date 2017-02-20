@@ -6,5 +6,7 @@ angular.module('app', [
 	'InitCtrl',
 	'KeyCtrl',
 	'MpcCtrl',
+	'SelCtrl',
+	'ResCtrl',
 	'Notemap.App.Service'
 ]);

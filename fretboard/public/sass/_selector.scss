@@ -32,18 +32,20 @@
 
 .data-output {
 	color: black;
-  height: 50px;
-  width: 100%;
-  border-radius: 2px;
-  margin: 5px 5px;
+	height: 50px;
+	width: 100%;
+	border-radius: 2px;
+	margin: 5px 5px;
+	width: 150px;
+	position: absolute;
 }
 
 .chord_filter-container {
 	display: table-cell;
   margin: 10px 0;
   position: absolute;
-  left: 117px;
-  top: 464px;
+  left: 350px;
+  top: 84px;
 }
 
 .chord_filter-selection {
@@ -52,6 +54,11 @@
   display: inline-block;
   text-align: center;
 	cursor: pointer;
+}
+
+.chord_filter-input {
+	width: 20px;
+	height: 20px;
 }
 
 .chord_filter-label {
@@ -67,13 +74,14 @@
 	}
 
 	&:hover {
-
+		background-color: darkorange;
 	}
 }
 
 .subset_results-name {
 	font-size: 1.2em;
 	padding: 5px;
+	border: 1px solid white;
 
 	&:hover {
 		cursor: pointer;

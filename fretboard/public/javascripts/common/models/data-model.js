@@ -15,12 +15,13 @@ angular.module('Notemap.App.Service', [])
 
     Notemap.data = {
       chords: false,
+			chordbanks: [],
+			chord_filters: [],
+			fretboard: [],
+			highlight_notes: [],
+			scales: false,
       tunings: false,
-      scales: false,
-      tuningSelected: {},
-      fretboard: [],
-      chordbanks: [],
-      chord_filters: [],
+      tuning_selected: {},
 
       getChords: function() {
         return $http.get(Notemap.const.CHORDS_URL)
@@ -79,7 +80,7 @@ angular.module('Notemap.App.Service', [])
     Notemap.getFretboard = function() {
 
       for(var i = 0; i < this.const.NUM_STRINGS; i++) {
-        let string = this.listNotes(this.data.tuningSelected.notes[i]);
+        let string = this.listNotes(this.data.tuning_selected.notes[i]);
         this.data.fretboard[i] = string;
       }
 
@@ -152,56 +153,150 @@ angular.module('Notemap.App.Service', [])
 
 
 
-
     /**
-      *	@param {string} stringId
-      *	@param {string} fretId
       *	@param {string} note eg: G# || B
       */
 
-    Notemap.addNote = function(note) {
+    Notemap.addNote = function(note, stringId, fretId) {
 
       var bank = this.getChordbankSelection();
+			var color = bank.color;
 
-      this.setChordbank(bank, note, true);
-      this.highlightKey(note, bank.color, true);
-      this.highlightMpc(note, bank.color, true);
+      this.setChordbankNotes(bank, note, true);
+
+			this.fretboardHighlight(stringId, fretId, color);
+			this.keyboardHighlight(note, color);
+      this.mpcHighlight(note, color);
     };
 
 
     /**
-      *	@param {string} stringId
-      *	@param {string} fretId
       *	@param {string} note eg: G# || B
+			* @param {Color} keyColorType rgba
       */
 
-    Notemap.deleteNote = function(stringId, fretId, note) {
+    Notemap.deleteNote = function(note, keyColorType, stringId, fretId) {
 
       var bank = this.getChordbankSelection();
+			var color = 'rgba(0,0,0,0)';
 
-      this.setChordbank(bank, note, false);
-      this.highlightKey(note, bank.color, false);
-      this.highlightMpc(note, bank.color, false);
+      this.setChordbankNotes(bank, note, false);
+
+			this.fretboardUnhighlight(stringId, fretId, color);
+			this.keyboardHighlight(note, keyColorType);
+      this.mpcHighlight(note, color);
     };
-
-
 
 
 		/**
-			*	@param {string} stringId
-			*	@param {string} fretId
-			*	@param {string} note eg: G# || B
+			* adds notes to highlight array
+			*	@param {Array} note eg: G# || B
 			*/
 
-		Notemap.highlightNote = function(stringId, fretId, note) {
+		Notemap.addHighlightNote = function(notes) {
 
+			var that = this;
 			var bank = this.getChordbankSelection();
 
-			// get notes difference
+			if(bank) {
+				notes.forEach(function(note){
+					if(!bank.notes.has(note)) {
+						that.data.highlight_notes.push(note);
+						var listOfElements = that.gatherAllElements(note);
+						listOfElements.forEach(function(el){
+							el.style.backgroundColor = 'rgba(255,100,10,1)'
+						});
+					}
+				})
+			}
+		};
 
-			this.setChordbank(bank, note, false);
-			this.highlightKey(note, bank.color, false);
-			this.highlightMpc(note, bank.color, false);
+
+		/**
+		* removes notes to highlight array
+		*	@param {Array} note eg: G# || B
+		*/
+
+		Notemap.removeHighlightNote = function(notes) {
+
+			var that = this;
+			var bank = this.getChordbankSelection();
+
+			if(bank) {
+				notes.forEach(function(note){
+
+					var index = bank.array.indexOf(note);
+
+					if(index == -1){
+						var listOfElements = that.gatherAllElements(note);
+						listOfElements.forEach(function(el){
+
+							if(el.classList.contains('key')){
+								var color = el.attributes[5].value;
+								el.style.backgroundColor = color;
+							} else {
+								el.style.backgroundColor = 'rgba(0,0,0,0)'
+							}
+						});
+						that.data.highlight_notes.splice(index, 1);
+					};
+				});
+			}
+		};
+
+
+		Notemap.gatherAllElements = function(note) {
+
+			var elements = [];
+
+			var frets = this.getFretElements(note);
+			var keys = this.getKeyElements(note);
+			var pads = this.getPadElements(note);
+
+			elements = elements.concat(frets, keys, pads)
+
+			return elements;
+		};
+
+
+		Notemap.getFretElements = function(note) {
+
+			var frets = [];
+
+			this.elements.fretboard.forEach(function(string){
+				string.forEach(function(fret){
+					if(fret.attributes[3].value == note)
+					frets.push(fret);
+				})
+			});
+
+			return frets;
+		};
+
+
+		Notemap.getKeyElements = function(note) {
+
+			var keys = [];
+
+			this.elements.keyboard.forEach(function(el){
+				if(el.attributes[1].value == note)
+					keys.push(el);
+			});
+
+			return keys;
+		};
+
+
+		Notemap.getPadElements = function(note) {
+
+			var pads = [];
+
+			this.elements.mpc.forEach(function(el){
+				if(el.attributes[2].value == note)
+					pads.push(el);
+			});
+
+			return pads;
 		};
 
 
@@ -210,6 +305,7 @@ angular.module('Notemap.App.Service', [])
      *	@param {String} stringId
      *  @returns {String} note on the fretboard
      */
+
 
     Notemap.getNote = function(stringId, fretId) {
 
@@ -228,9 +324,9 @@ angular.module('Notemap.App.Service', [])
       * @returns {Array}
       */
 
-    Notemap.setChordbank = function(bank, note, addMode) {
+    Notemap.setChordbankNotes = function(bank, note, addMode) {
 
-      if(addMode) { //switch
+      if(addMode) {
         bank.notes.add(note);
       } else {
         bank.notes.delete(note);
@@ -318,66 +414,58 @@ angular.module('Notemap.App.Service', [])
 
 
 
-    Notemap.highlightKey = function(note, color, highlight) {
-
-      for(var i = 0; i < this.const.NUM_KEYS; i++) {
-        var key = this.elements.keyboard[i];
-
-        if(key.attributes[1].value == note && highlight){
-          key.classList.add('selected');
-          key.classList.remove('default');
-          $(key).css("background-color", color);
-
-        } else if (key.attributes[1].value == note && !highlight) {
-          key.classList.remove('selected');
-          key.classList.add('default');
-        }
-      }
-    };
-
-
 		/**
     *	@param {String} stringId
     *	@param {String} fretId
     *	@param {Color} color in rgba format
     */
 
-    Notemap.highlightMpc = function(note, color, highlight) {
+    Notemap.fretboardHighlight = function(stringId, fretId, color) {
 
-      var padToBeHighlighted = this.elements.mpc.filter(function(pad){
+      this.elements.fretboard[stringId][fretId].style.backgroundColor = color;
+    };
+
+
+    /**
+    *	@param {String} stringId
+    *	@param {String} fretId
+    */
+
+    Notemap.fretboardUnhighlight = function(stringId, fretId, color) {
+
+      this.elements.fretboard[stringId][fretId].style.backgroundColor = color;
+    };
+
+
+		/**
+    *	@param {String} note
+		* @param {Color} color
+    */
+
+    Notemap.mpcHighlight = function(note, color) {
+
+      var modifiedPad = this.elements.mpc.filter(function(pad){
         return pad.attributes[2].value == note;
       });
 
-			console.log(padToBeHighlighted);
-
-      padToBeHighlighted.style.backgroundColor = color;
+      modifiedPad[0].style.backgroundColor = color;
     };
 
 
-    /**
-    *	@param {String} stringId
-    *	@param {String} fretId
-    *	@param {Color} color in rgba format
-    */
+		/**
+		*	@param {String} note
+		* @param {Color} color
+		*/
 
-    Notemap.highlightFretboard = function(stringId, fretId, color) {
+		Notemap.keyboardHighlight = function(note, color) {
 
-      this.elements.fretboard[stringId][fretId].setAttribute('selected', true);
-      this.elements.fretboard[stringId][fretId].style.backgroundColor = color;
+			var modifiedKey = this.elements.keyboard.filter(function(key){
+				return key.attributes[1].value == note;
+			});
+
+			modifiedKey[0].style.background = color;
     };
 
-
-    /**
-    *	@param {String} stringId
-    *	@param {String} fretId
-    */
-
-    Notemap.unhighlightFretboard = function(stringId, fretId) {
-
-      let color = 'rgba(0, 0, 0, 0)';
-      this.elements.fretboard[stringId][fretId].setAttribute('selected', false);
-      this.elements.fretboard[stringId][fretId].style.backgroundColor = color;
-    };
 
 
 
@@ -417,7 +505,7 @@ angular.module('Notemap.App.Service', [])
 
       for(var i = 0; i < this.elements.tuning_pegs.length; i++) {
         this.elements.tuning_pegs[i].value =
-          Notemap.data.tuningSelected.notes[i];
+          Notemap.data.tuning_selected.notes[i];
       }
     };
 

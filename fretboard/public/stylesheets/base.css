@@ -43,6 +43,13 @@ p, h1, h2, h3, h4, h5, a {
     background-color: rgba(255, 255, 255, 0.2); }
     .fret:hover > .fret_note {
       display: block; }
+  .fret span {
+    font-size: 10px;
+    display: block;
+    position: absolute; }
+
+.frets {
+  width: 100%; }
 
 .fret_note,
 .fret_number {
@@ -62,14 +69,6 @@ p, h1, h2, h3, h4, h5, a {
   .tuning-selector_container select {
     height: 50px;
     width: 300px; }
-
-.chord_filter-input {
-  width: 20px;
-  height: 20px; }
-
-.chord_filter-label {
-  font-family: "'Reem Kufi', sans-serif";
-  color: white; }
 
 .fret_marker {
   position: absolute;
@@ -201,9 +200,9 @@ h1.logo_text {
 
 .mpc {
   display: block;
-  width: 220px;
+  width: 364px;
   position: relative;
-  left: 44%;
+  left: 40%;
   bottom: 17px; }
 
 .mpc_container {
@@ -212,8 +211,8 @@ h1.logo_text {
   width: 100%; }
 
 .pad {
-  width: 50px;
-  height: 50px;
+  width: 86px;
+  height: 86px;
   background: rgba(255, 255, 255, 0);
   border: 1px solid white;
   border-radius: 4px;
@@ -251,14 +250,16 @@ h1.logo_text {
   height: 50px;
   width: 100%;
   border-radius: 2px;
-  margin: 5px 5px; }
+  margin: 5px 5px;
+  width: 150px;
+  position: absolute; }
 
 .chord_filter-container {
   display: table-cell;
   margin: 10px 0;
   position: absolute;
-  left: 117px;
-  top: 464px; }
+  left: 350px;
+  top: 84px; }
 
 .chord_filter-selection {
   width: 46px;
@@ -266,6 +267,10 @@ h1.logo_text {
   display: inline-block;
   text-align: center;
   cursor: pointer; }
+
+.chord_filter-input {
+  width: 20px;
+  height: 20px; }
 
 .chord_filter-label {
   border: solid 1px white;
@@ -276,10 +281,13 @@ h1.logo_text {
   background-color: rgba(255, 255, 255, 0); }
   .chord_filter-label.active {
     background-color: darkorange; }
+  .chord_filter-label:hover {
+    background-color: darkorange; }
 
 .subset_results-name {
   font-size: 1.2em;
-  padding: 5px; }
+  padding: 5px;
+  border: 1px solid white; }
   .subset_results-name:hover {
     cursor: pointer; }
 

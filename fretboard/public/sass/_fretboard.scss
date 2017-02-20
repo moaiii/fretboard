@@ -32,6 +32,17 @@
 			display: block;
 		}
 	}
+
+	span {
+		font-size: 10px;
+		display: block;
+		position: absolute;
+		// padding: 10px 14px;
+	}
+}
+
+.frets {
+	width: 100%;
 }
 
 .fret_note,
@@ -59,16 +70,6 @@
 		height: 50px;
 		width: 300px;
 	}
-}
-
-.chord_filter-input {
-	width: 20px;
-	height: 20px;
-}
-
-.chord_filter-label {
-	font-family: $font;
-	color: white;
 }
 
 .fret_marker {
