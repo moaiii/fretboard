@@ -2,6 +2,9 @@
   "name": "fretboard",
   "version": "0.0.0",
   "private": true,
+	"scripts": {
+		"start": "node ./bin/www"
+	}
   "dependencies": {
     "angular": "^1.6.1",
     "autoprefixer": "^6.7.4",
@@ -28,8 +31,5 @@
   "devDependencies": {
     "babel-cli": "^6.23.0",
     "babel-preset-env": "^1.1.8"
-  },
-  "scripts": {
-    "start": "node ./bin/www"
   }
 }
