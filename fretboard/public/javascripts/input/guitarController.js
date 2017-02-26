@@ -3,6 +3,7 @@ angular.module('GuitarCtrl', [])
 
 		this.service = NotemapApp;
 
+		this.selectedTuning = "";
 
     this.fretClicked = function(event) {
 

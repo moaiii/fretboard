@@ -1,14 +1,15 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
 	background-color: $black-dark;
-	padding: 30px;
+	padding: 0px;
 }
 
 p, h1, h2, h3, h4, h5, a {
-	font-family: $font;
+	font-family: 'Raleway', sans-serif;
 	color: white;
 }

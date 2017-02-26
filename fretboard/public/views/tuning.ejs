@@ -1,0 +1,8 @@
+<div class="tuning">
+	<h1>Guitar Tuning</h1>
+	<select name="tuningSelector" id="tuningSelector"
+		class="tuning-selector_container" ng-options="guitar.service.data.tuning[key] for option in guitar.service.data.tunings track by $index"
+		ng-model="guitar.selectedTuning"
+		ng-change="guitar.onTuningChange()">
+</select>
+</div>

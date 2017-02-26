@@ -1,11 +1,11 @@
 <div class="data-output output-one" data-array="chord-bank-one">
-	<h1 ng-model="guitar.service.data.chordbanks[0].name">
-		{{guitar.service.data.chordbanks[0].name}}</h1>
+	<h1 ng-model="guitar.service.data.chordbanks[<%= chordbankId %>].name">
+		{{guitar.service.data.chordbanks[<%= chordbankId %>].name}}</h1>
 	<h2 ng-repeat="note in guitar.service.data.chordbanks[0].array
 			track by $index">
 		{{note}}</h2>
 	<p class="subset_results-name"
-		 ng-repeat="subset in results.service.data.chordbanks[0].subsets
+		 ng-repeat="subset in results.service.data.chordbanks[<%= chordbankId %>].subsets
 		 track by $index" data-name="{{subset | chord_filter_name}}"
 		 data-notes="{{subset | chord_filter_notes}}"
 		 ng-mouseover="results.chordMouseOver($event)"

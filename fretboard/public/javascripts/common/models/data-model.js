@@ -265,6 +265,13 @@ angular.module('Notemap.App.Service', [])
     };
 
 
+		Notemap.clearFretboard_ = function() {
+			console.log(this.data.highlight_notes);
+			this.removeHighlightNote(this.data.highlight_notes);
+			console.log(this.data.highlight_notes);
+		};
+
+
 		/**
 		  * ::: Getter function :::
       * Using the note as the lookup item, we loop through the element lists

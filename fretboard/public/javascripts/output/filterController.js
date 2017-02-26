@@ -13,12 +13,10 @@ angular.module('FilterCtrl', [])
 		};
 
 
-
 		this.filterClicked = function(event) {
 			this._filterUiToggle(event.target);
 			this.updateService(event.target.attributes[1].value);
 		};
-
 
 
 		this._filterUiToggle = function(element) {
@@ -26,16 +24,13 @@ angular.module('FilterCtrl', [])
 		};
 
 
-
 		this.updateService = function(filterName) {
 			NotemapApp.setFilters(filterName);
 		};
 
 
-
 		Filters.app = new Filters.App();
 })
-
 
 
 .filter('chord_filter_name', function(NotemapApp) {
@@ -48,7 +43,6 @@ angular.module('FilterCtrl', [])
 				}
     };
 })
-
 
 
 .filter('chord_filter_notes', function(NotemapApp) {

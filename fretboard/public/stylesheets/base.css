@@ -8,15 +8,22 @@
  */
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 body {
   background-color: #222222;
-  padding: 30px; }
+  padding: 0px; }
 
 p, h1, h2, h3, h4, h5, a {
-  font-family: "'Josefin Sans', sans-serif";
+  font-family: 'Raleway', sans-serif;
   color: white; }
+
+.fretboard {
+  margin: 60px 0 0 0; }
+
+.guitar-container {
+  margin-top: 100px; }
 
 .string {
   display: flex; }
@@ -33,12 +40,13 @@ p, h1, h2, h3, h4, h5, a {
     display: table-cell; }
 
 .fret {
+  border: solid 0.5px white;
+  border-radius: 4px;
   color: white;
   display: inline-block;
-  width: 40px;
   height: 40px;
-  border-radius: 4px;
-  border: solid 0.5px white; }
+  position: relative;
+  width: 40px; }
   .fret:hover {
     background-color: rgba(255, 255, 255, 0.2); }
     .fret:hover > .fret_note {
@@ -46,7 +54,10 @@ p, h1, h2, h3, h4, h5, a {
   .fret span {
     font-size: 10px;
     display: block;
-    position: absolute; }
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0); }
 
 .frets {
   width: 100%; }
@@ -65,10 +76,10 @@ p, h1, h2, h3, h4, h5, a {
   margin: 0 5px; }
 
 .tuning-selector_container {
-  margin: 50px 0; }
+  width: 300px; }
   .tuning-selector_container select {
     height: 50px;
-    width: 300px; }
+    width: 200px; }
 
 .fret_marker {
   position: absolute;
@@ -76,48 +87,56 @@ p, h1, h2, h3, h4, h5, a {
   width: 26px;
   height: 26px;
   border-radius: 13px;
-  background-color: white; }
+  background-color: white;
+  z-index: 1; }
   .fret_marker.fret_3 {
-    left: 236px;
-    top: 304px; }
+    left: 199px;
+    top: 317px; }
   .fret_marker.fret_5 {
-    left: 328px;
-    top: 304px; }
+    left: 286px;
+    top: 317px; }
   .fret_marker.fret_7 {
-    left: 420px;
-    top: 304px; }
+    left: 375px;
+    top: 317px; }
   .fret_marker.fret_9 {
-    left: 513px;
-    top: 304px; }
+    left: 464px;
+    top: 317px; }
   .fret_marker.fret_12-top {
-    top: 257px;
-    left: 650px; }
+    top: 270px;
+    left: 595px; }
   .fret_marker.fret_12-bottom {
-    top: 349px;
-    left: 650px; }
+    top: 360px;
+    left: 595px; }
   .fret_marker.fret_15 {
-    left: 788px;
-    top: 304px; }
+    left: 727px;
+    top: 317px; }
   .fret_marker.fret_17 {
-    left: 883px;
-    top: 304px; }
+    left: 815px;
+    top: 317px; }
   .fret_marker.fret_19 {
-    left: 972px;
-    top: 304px; }
+    left: 904px;
+    top: 317px; }
 
 .nut {
-  width: 4px;
-  height: 281px;
+  width: 5px;
+  height: 254px;
   position: absolute;
-  left: 132px;
-  top: 176px;
+  left: 100px;
+  top: 203px;
   background: red;
   border-radius: 8px; }
 
+.tuning {
+  position: relative;
+  display: block; }
+
+.key-inputs_group {
+  position: relative;
+  display: inline-flex;
+  margin: 15px 0; }
+
 .keyboard {
-  display: table;
-  margin: 50px auto;
-  height: 150px; }
+  display: block; }
 
 .key:hover {
   background-color: cornflowerblue; }
@@ -199,11 +218,9 @@ h1.logo_text {
     mix-blend-mode: multiply; }
 
 .mpc {
-  display: block;
-  width: 364px;
+  width: 162px;
   position: relative;
-  left: 40%;
-  bottom: 17px; }
+  left: 100px; }
 
 .mpc_container {
   display: block;
@@ -211,22 +228,41 @@ h1.logo_text {
   width: 100%; }
 
 .pad {
-  width: 86px;
-  height: 86px;
+  width: 38px;
+  height: 38px;
   background: rgba(255, 255, 255, 0);
   border: 1px solid white;
   border-radius: 4px;
-  float: left; }
+  float: left;
+  position: relative; }
   .pad:hover {
     background-color: cornflowerblue; }
   .pad.selected {
     display: table-cell; }
+  .pad > span {
+    font-size: 12px;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0); }
+
+.selectors {
+  position: absolute;
+  right: 370px;
+  top: 83px; }
 
 .chord-bank_container {
-  width: 100%;
-  height: 150px; }
+  height: 60px;
+  display: inline-flex; }
   .chord-bank_container.hidden {
     display: none; }
+
+.chordbank {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 30px 0 0; }
 
 .chords {
   display: inline-flex; }
@@ -237,29 +273,56 @@ h1.logo_text {
   height: 50px;
   border-radius: 4px;
   margin: 5px 5px;
-  cursor: pointer; }
+  cursor: pointer;
+  opacity: 0.6; }
   .chord-bank.bank-one {
     background-color: red; }
   .chord-bank.bank-two {
     background-color: green; }
   .chord-bank.bank-three {
     background-color: blue; }
+  .chord-bank::after {
+    content: " ";
+    display: block;
+    position: relative;
+    width: 62px;
+    height: 62px;
+    left: -7px;
+    top: -7px;
+    border-radius: 10px;
+    border: grey 0px solid;
+    background-color: transparent; }
+  .chord-bank:hover::after {
+    border: white 1px solid; }
+  .chord-bank.active {
+    opacity: 1; }
+    .chord-bank.active::after {
+      border: white 1px solid; }
 
 .data-output {
   color: black;
-  height: 50px;
+  height: 152px;
   width: 100%;
-  border-radius: 2px;
-  margin: 5px 5px;
-  width: 150px;
-  position: absolute; }
+  margin: 0 0 0 115px;
+  width: 500px;
+  column-gap: 0px;
+  position: relative;
+  column-count: 4;
+  overflow-x: scroll; }
+
+.filters {
+  position: absolute;
+  top: 83px;
+  left: 370px; }
+  .filters > h1 {
+    margin-bottom: 5px; }
 
 .chord_filter-container {
   display: table-cell;
   margin: 10px 0;
-  position: absolute;
-  left: 350px;
-  top: 84px; }
+  column-count: 2;
+  column-gap: 2px;
+  width: 296px; }
 
 .chord_filter-selection {
   width: 46px;
@@ -276,6 +339,7 @@ h1.logo_text {
   border: solid 1px white;
   border-radius: 4px;
   height: 100%;
+  margin: 8px 0;
   font-family: "'Josefin Sans', sans-serif";
   width: 100%;
   background-color: rgba(255, 255, 255, 0); }
@@ -286,10 +350,17 @@ h1.logo_text {
 
 .subset_results-name {
   font-size: 1.2em;
-  padding: 5px;
-  border: 1px solid white; }
+  border-radius: 5px;
+  padding: 0 10px;
+  height: 49px;
+  display: block;
+  overflow-x: scroll; }
+  .subset_results-name.hidden {
+    display: none; }
   .subset_results-name:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    background-color: darkorange;
+    border: 1px solid white; }
 
 .subset_results-notes {
   font-size: 1em; }
@@ -353,12 +424,21 @@ h1.logo_text {
 .toolbar-container {
   position: fixed;
   width: 100%;
-  height: 100px;
-  top: 0; }
+  height: 70px;
+  top: 0;
+  z-index: 2;
+  background-color: green; }
 
 .toolbar-nav {
-  display: inline-flex; }
+  display: inline-flex;
+  height: 100%; }
 
 .toolbar-nav-item {
   list-style: none;
-  margin: 0 50px; }
+  margin: 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .toolbar-nav-item > button {
+    width: 150px;
+    height: 50px; }

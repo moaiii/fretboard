@@ -1,7 +1,11 @@
+.key-inputs_group {
+	position: relative;
+	display: inline-flex;
+	margin: 15px 0;
+}
+
 .keyboard {
-	display: table;
-  margin: 50px auto;
-  height: 150px;
+	display: block;
 }
 
 .key {

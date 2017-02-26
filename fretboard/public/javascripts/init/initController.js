@@ -5,11 +5,13 @@ angular.module('InitCtrl', [])
 
     Init.App = function() { // wait for tunings to be loaded
       var self = this;
+
       NotemapApp.data.getTunings().then(function(response) {
         self._init();
       }, function(error) {
         alert(error);
       });
+
       NotemapApp.data.getChords().then(function(response) {
       }, function(error) {
         alert(error);
@@ -24,13 +26,14 @@ angular.module('InitCtrl', [])
       NotemapApp.elements.tuning_pegs = this._createTuningPegs();
       this._appendPegs(NotemapApp.elements.tuning_pegs);
       this.strings = this._getStrings();
-      this._createTuningSelector(this.frets, this.tuning);
+      // this._createTuningSelector(this.frets, this.tuning);
       NotemapApp.getFretboard();
       this.frets = this.getFretboardElements();
 			this.frets = NotemapApp.setFretboard();
       this.initChordBanks();
       NotemapApp.elements.keyboard = this.getKeys();
       NotemapApp.elements.mpc = this.getPads();
+			NotemapApp.elements.chordbankSelectors = this.getChordbankSelectors();
     };
 
 
@@ -52,7 +55,7 @@ angular.module('InitCtrl', [])
         pegs[i].setAttribute("id", "peg-" + i);
         pegs[i].setAttribute("class", "tuning-peg");
 
-        for(var j = 0; // options
+        for(var j = 0;
           j < NotemapApp.const.CHROMATIC_SCALE.length; j++){
             var option = document.createElement("option");
             option.setAttribute("value",
@@ -70,21 +73,21 @@ angular.module('InitCtrl', [])
 
 
     Init.App.prototype._createTuningSelector = function() {
-
-      NotemapApp.data.tuning_selected.element =
-        document.getElementById("tuning-selector");
-
-      for(var tuning in NotemapApp.data.tunings) {
-        var value = NotemapApp.data.tunings[tuning];
-        var option = document.createElement("option");
-        option.setAttribute("value", value);
-        option.text = tuning;
-				if(tuning == 'STANDARD') {
-					option.selected = true;
-				}
-        NotemapApp.data.tuning_selected.element.appendChild(option);
-      }
-      return NotemapApp.data.tuning_selected.element;
+			console.log(NotemapApp.data.tunings);
+      // NotemapApp.data.tuning_selected.element =
+      //   document.getElementById("tuning-selector");
+			//
+      // for(var tuning in NotemapApp.data.tunings) {
+      //   var value = NotemapApp.data.tunings[tuning];
+      //   var option = document.createElement("option");
+      //   option.setAttribute("value", value);
+      //   option.text = tuning;
+			// 	if(tuning == 'STANDARD') {
+			// 		option.selected = true;
+			// 	}
+      //   NotemapApp.data.tuning_selected.element.appendChild(option);
+      // }
+      // return NotemapApp.data.tuning_selected.element;
     };
 
 
@@ -162,7 +165,14 @@ angular.module('InitCtrl', [])
       return [].slice.call(document.getElementsByClassName('pad'));
     };
 
+    /**
+		 *	Gets chord bank selectors from the dom
+		 *  @returns {Array}
+		 */
+    Init.App.prototype.getChordbankSelectors = function() {
 
+      return [].slice.call(document.getElementsByClassName('chord-bank'));
+    };
 
 
      window.onload = function() {
